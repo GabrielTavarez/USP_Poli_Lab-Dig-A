@@ -1,0 +1,357 @@
+$comment
+	File created using the following command:
+		vcd file maquina_estados.msim.vcd -direction
+$end
+$date
+	Sun May 29 12:48:56 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module maquina_estados_vhd_vec_tst $end
+$var wire 1 ! CLK $end
+$var wire 1 " CLR $end
+$var wire 1 # TOG_EN $end
+$var wire 1 $ Z1 $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var wire 1 ( devoe $end
+$var wire 1 ) devclrn $end
+$var wire 1 * devpor $end
+$var wire 1 + ww_devoe $end
+$var wire 1 , ww_devclrn $end
+$var wire 1 - ww_devpor $end
+$var wire 1 . ww_TOG_EN $end
+$var wire 1 / ww_CLK $end
+$var wire 1 0 ww_CLR $end
+$var wire 1 1 ww_Z1 $end
+$var wire 1 2 \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 3 \CLK~input_o\ $end
+$var wire 1 4 \TOG_EN~input_o\ $end
+$var wire 1 5 \PS.ST0~0_combout\ $end
+$var wire 1 6 \PS.ST0~feeder_combout\ $end
+$var wire 1 7 \CLR~input_o\ $end
+$var wire 1 8 \PS.ST0~q\ $end
+$var wire 1 9 \ALT_INV_CLR~input_o\ $end
+$var wire 1 : \ALT_INV_TOG_EN~input_o\ $end
+$var wire 1 ; \ALT_INV_PS.ST0~0_combout\ $end
+$var wire 1 < \ALT_INV_PS.ST0~q\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+1&
+x'
+1(
+1)
+1*
+1+
+1,
+1-
+0.
+0/
+00
+01
+x2
+03
+04
+05
+06
+07
+08
+19
+1:
+1;
+1<
+$end
+#20000
+1!
+1/
+13
+#40000
+0!
+0/
+03
+#60000
+1!
+1/
+13
+#80000
+0!
+0/
+03
+#90000
+1#
+1.
+14
+0:
+15
+0;
+16
+#100000
+1!
+1/
+13
+18
+0<
+05
+1;
+11
+06
+1$
+#120000
+0!
+0#
+0/
+0.
+04
+03
+1:
+15
+0;
+16
+#140000
+1!
+1/
+13
+#160000
+0!
+0/
+03
+#170000
+1#
+1.
+14
+0:
+05
+1;
+06
+#180000
+1!
+1/
+13
+08
+1<
+15
+0;
+01
+16
+0$
+#200000
+0!
+0#
+0/
+0.
+04
+03
+1:
+05
+1;
+06
+#220000
+1!
+1/
+13
+#240000
+0!
+0/
+03
+#250000
+1#
+1.
+14
+0:
+15
+0;
+16
+#260000
+1!
+1/
+13
+18
+0<
+05
+1;
+11
+06
+1$
+#280000
+0!
+0#
+0/
+0.
+04
+03
+1:
+15
+0;
+16
+#300000
+1!
+1"
+1/
+10
+17
+13
+09
+08
+1<
+05
+1;
+01
+06
+0$
+#320000
+0!
+0/
+03
+#340000
+1!
+1/
+13
+#360000
+0!
+0/
+03
+#380000
+1!
+0"
+1/
+00
+07
+13
+19
+#400000
+0!
+0/
+03
+#420000
+1!
+1/
+13
+#440000
+0!
+0/
+03
+#460000
+1!
+1/
+13
+#480000
+0!
+0/
+03
+#500000
+1!
+1/
+13
+#520000
+0!
+0/
+03
+#540000
+1!
+1/
+13
+#560000
+0!
+0/
+03
+#580000
+1!
+1/
+13
+#600000
+0!
+0/
+03
+#620000
+1!
+1/
+13
+#640000
+0!
+0/
+03
+#660000
+1!
+1/
+13
+#680000
+0!
+0/
+03
+#700000
+1!
+1/
+13
+#720000
+0!
+0/
+03
+#740000
+1!
+1/
+13
+#760000
+0!
+0/
+03
+#780000
+1!
+1/
+13
+#800000
+0!
+0/
+03
+#820000
+1!
+1/
+13
+#840000
+0!
+0/
+03
+#860000
+1!
+1/
+13
+#880000
+0!
+0/
+03
+#900000
+1!
+1/
+13
+#920000
+0!
+0/
+03
+#940000
+1!
+1/
+13
+#960000
+0!
+0/
+03
+#980000
+1!
+1/
+13
+#1000000

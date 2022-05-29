@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/maquian_de_estados_01/maquina_estados.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/maquian_de_estados_01/db/maquina_estados.cbx.xml
+design_name = maquina_estados
+instance = comp, \Z1~output\, Z1~output, maquina_estados, 1
+instance = comp, \CLK~input\, CLK~input, maquina_estados, 1
+instance = comp, \TOG_EN~input\, TOG_EN~input, maquina_estados, 1
+instance = comp, \PS.ST0~0\, PS.ST0~0, maquina_estados, 1
+instance = comp, \PS.ST0~feeder\, PS.ST0~feeder, maquina_estados, 1
+instance = comp, \CLR~input\, CLR~input, maquina_estados, 1
+instance = comp, \PS.ST0\, PS.ST0, maquina_estados, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, maquina_estados, 1

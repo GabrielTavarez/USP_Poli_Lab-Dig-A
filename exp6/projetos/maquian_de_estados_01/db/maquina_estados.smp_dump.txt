@@ -1,0 +1,6 @@
+
+State Machine - |maquina_estados|PS
+Name PS.ST2 PS.ST1 PS.ST0 
+PS.ST0 0 0 0 
+PS.ST1 0 1 1 
+PS.ST2 1 0 1 

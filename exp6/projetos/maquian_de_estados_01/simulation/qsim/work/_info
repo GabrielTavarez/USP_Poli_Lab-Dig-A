@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/maquian_de_estados_01/simulation/qsim
+Emaquina_estados
+Z1 w1653839332
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 41KVoNENnj;RUmMIITVQg1
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 MmMkVfW5JWkR?lm<VcfRO1
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
+R0
+Z11 8maquina_estados.vho
+Z12 Fmaquina_estados.vho
+l0
+L39
+V>R5lUjd7L=mlP9>k`O[Le2
+!s100 14<fdQal7?PJPaU[hkI7l3
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1653839334
+!i10b 1
+Z15 !s108 1653839334.000000
+Z16 !s90 -work|work|maquina_estados.vho|
+Z17 !s107 maquina_estados.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 15 maquina_estados 0 22 >R5lUjd7L=mlP9>k`O[Le2
+l81
+L55
+V>eKe=I@1hI?7J=]hHT[hh3
+!s100 ?doRCknaOHjQ2Y5SiNVj43
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Emaquina_estados_vhd_vec_tst
+Z20 w1653839327
+R8
+R9
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32
+V_`GRLW4aCTcE`1fCfAdGH1
+!s100 PgdmU;kaHYDz6=YlC^`JB0
+R13
+32
+Z23 !s110 1653839335
+!i10b 1
+R15
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Amaquina_estados_arch
+R8
+R9
+DEx4 work 27 maquina_estados_vhd_vec_tst 0 22 _`GRLW4aCTcE`1fCfAdGH1
+l49
+L34
+V:J;8o0mflfVPUjdRV3FM?2
+!s100 P95z;@l?83Z4FO@VA3HIW2
+R13
+32
+R23
+!i10b 1
+R15
+R24
+R25
+!i113 1
+R18
+R19
