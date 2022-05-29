@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Sophia/Documents/parasitas/exp5/comparador/comparador.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Sophia/Documents/parasitas/exp5/comparador/db/comparador.cbx.xml
+design_name = comparador
+instance = comp, \igual~output\, igual~output, comparador, 1
+instance = comp, \B[0]~input\, B[0]~input, comparador, 1
+instance = comp, \A[0]~input\, A[0]~input, comparador, 1
+instance = comp, \B[1]~input\, B[1]~input, comparador, 1
+instance = comp, \A[1]~input\, A[1]~input, comparador, 1
+instance = comp, \Equal0~0\, Equal0~0, comparador, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, comparador, 1

@@ -1,0 +1,18 @@
+Quartus Prime Archive log --	C:/Users/Sophia/Documents/parasitas/exp5/controlador_vagas/controlador_vagas.qarlog
+
+Archive:	C:/Users/Sophia/Documents/parasitas/exp5/controlador_vagas/controlador_vagas.qar
+Date:		Mon May 23 09:52:40 2022
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Sophia/Documents/parasitas/exp5/controlador_vagas/Waveform.vwf
+C:/Users/Sophia/Documents/parasitas/exp5/controlador_vagas/comparador.vhd
+C:/Users/Sophia/Documents/parasitas/exp5/controlador_vagas/controlador_vagas.qpf
+C:/Users/Sophia/Documents/parasitas/exp5/controlador_vagas/controlador_vagas.qsf
+C:/Users/Sophia/Documents/parasitas/exp5/controlador_vagas/controlador_vagas.vhd
+C:/Users/Sophia/Documents/parasitas/exp5/controlador_vagas/up_down.vhd
+c:/intelfpga_lite/16.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

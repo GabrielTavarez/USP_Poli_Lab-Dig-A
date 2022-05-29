@@ -1,0 +1,982 @@
+$comment
+	File created using the following command:
+		vcd file controlador_vagas.msim.vcd -direction
+$end
+$date
+	Sun May 29 12:17:52 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module controlador_vagas_vhd_vec_tst $end
+$var wire 1 ! cheio $end
+$var wire 1 " clear $end
+$var wire 1 # clock $end
+$var wire 1 $ conta_idosos $end
+$var wire 1 % conta_normal $end
+$var wire 1 & entra_sai_idosos $end
+$var wire 1 ' entra_sai_normal $end
+$var wire 1 ( load $end
+$var wire 1 ) vagas_load [3] $end
+$var wire 1 * vagas_load [2] $end
+$var wire 1 + vagas_load [1] $end
+$var wire 1 , vagas_load [0] $end
+$var wire 1 - vagas_out_idosos [3] $end
+$var wire 1 . vagas_out_idosos [2] $end
+$var wire 1 / vagas_out_idosos [1] $end
+$var wire 1 0 vagas_out_idosos [0] $end
+$var wire 1 1 vagas_out_total [3] $end
+$var wire 1 2 vagas_out_total [2] $end
+$var wire 1 3 vagas_out_total [1] $end
+$var wire 1 4 vagas_out_total [0] $end
+$var wire 1 5 vagas_total [3] $end
+$var wire 1 6 vagas_total [2] $end
+$var wire 1 7 vagas_total [1] $end
+$var wire 1 8 vagas_total [0] $end
+
+$scope module i1 $end
+$var wire 1 9 gnd $end
+$var wire 1 : vcc $end
+$var wire 1 ; unknown $end
+$var wire 1 < devoe $end
+$var wire 1 = devclrn $end
+$var wire 1 > devpor $end
+$var wire 1 ? ww_devoe $end
+$var wire 1 @ ww_devclrn $end
+$var wire 1 A ww_devpor $end
+$var wire 1 B ww_clock $end
+$var wire 1 C ww_clear $end
+$var wire 1 D ww_conta_idosos $end
+$var wire 1 E ww_conta_normal $end
+$var wire 1 F ww_entra_sai_normal $end
+$var wire 1 G ww_entra_sai_idosos $end
+$var wire 1 H ww_load $end
+$var wire 1 I ww_vagas_total [3] $end
+$var wire 1 J ww_vagas_total [2] $end
+$var wire 1 K ww_vagas_total [1] $end
+$var wire 1 L ww_vagas_total [0] $end
+$var wire 1 M ww_vagas_load [3] $end
+$var wire 1 N ww_vagas_load [2] $end
+$var wire 1 O ww_vagas_load [1] $end
+$var wire 1 P ww_vagas_load [0] $end
+$var wire 1 Q ww_vagas_out_total [3] $end
+$var wire 1 R ww_vagas_out_total [2] $end
+$var wire 1 S ww_vagas_out_total [1] $end
+$var wire 1 T ww_vagas_out_total [0] $end
+$var wire 1 U ww_vagas_out_idosos [3] $end
+$var wire 1 V ww_vagas_out_idosos [2] $end
+$var wire 1 W ww_vagas_out_idosos [1] $end
+$var wire 1 X ww_vagas_out_idosos [0] $end
+$var wire 1 Y ww_cheio $end
+$var wire 1 Z \vagas_out_total[0]~output_o\ $end
+$var wire 1 [ \vagas_out_total[1]~output_o\ $end
+$var wire 1 \ \vagas_out_total[2]~output_o\ $end
+$var wire 1 ] \vagas_out_total[3]~output_o\ $end
+$var wire 1 ^ \vagas_out_idosos[0]~output_o\ $end
+$var wire 1 _ \vagas_out_idosos[1]~output_o\ $end
+$var wire 1 ` \vagas_out_idosos[2]~output_o\ $end
+$var wire 1 a \vagas_out_idosos[3]~output_o\ $end
+$var wire 1 b \cheio~output_o\ $end
+$var wire 1 c \clock~input_o\ $end
+$var wire 1 d \load~input_o\ $end
+$var wire 1 e \vagas_load[0]~input_o\ $end
+$var wire 1 f \cont_total|IQ~0_combout\ $end
+$var wire 1 g \clear~input_o\ $end
+$var wire 1 h \vagas_load[1]~input_o\ $end
+$var wire 1 i \entra_sai_normal~input_o\ $end
+$var wire 1 j \entra_sai_idosos~input_o\ $end
+$var wire 1 k \entra_sai_total_s~combout\ $end
+$var wire 1 l \vagas_load[2]~input_o\ $end
+$var wire 1 m \cont_total|Add0~0_combout\ $end
+$var wire 1 n \cont_total|IQ~4_combout\ $end
+$var wire 1 o \cont_total|IQ~5_combout\ $end
+$var wire 1 p \vagas_load[3]~input_o\ $end
+$var wire 1 q \cont_total|IQ[3]~6_combout\ $end
+$var wire 1 r \cont_total|IQ[3]~7_combout\ $end
+$var wire 1 s \cont_total|IQ~2_combout\ $end
+$var wire 1 t \cont_total|IQ~3_combout\ $end
+$var wire 1 u \vagas_total[1]~input_o\ $end
+$var wire 1 v \vagas_total[0]~input_o\ $end
+$var wire 1 w \comp1|maior_igual~0_combout\ $end
+$var wire 1 x \conta_idosos~input_o\ $end
+$var wire 1 y \conta_normal~input_o\ $end
+$var wire 1 z \vagas_total[3]~input_o\ $end
+$var wire 1 { \vagas_total[2]~input_o\ $end
+$var wire 1 | \comp1|maior_igual~1_combout\ $end
+$var wire 1 } \comp1|maior_igual~2_combout\ $end
+$var wire 1 ~ \cont_total|IQ[0]~1_combout\ $end
+$var wire 1 !! \cont_idosos|IQ~0_combout\ $end
+$var wire 1 "! \cont_idosos|IQ[0]~1_combout\ $end
+$var wire 1 #! \cont_idosos|IQ~7_combout\ $end
+$var wire 1 $! \cont_idosos|IQ~6_combout\ $end
+$var wire 1 %! \cont_idosos|IQ~2_combout\ $end
+$var wire 1 &! \comp1|maior_igual~3_combout\ $end
+$var wire 1 '! \cont_total|IQ\ [3] $end
+$var wire 1 (! \cont_total|IQ\ [2] $end
+$var wire 1 )! \cont_total|IQ\ [1] $end
+$var wire 1 *! \cont_total|IQ\ [0] $end
+$var wire 1 +! \cont_idosos|IQ\ [3] $end
+$var wire 1 ,! \cont_idosos|IQ\ [2] $end
+$var wire 1 -! \cont_idosos|IQ\ [1] $end
+$var wire 1 .! \cont_idosos|IQ\ [0] $end
+$var wire 1 /! \ALT_INV_vagas_load[3]~input_o\ $end
+$var wire 1 0! \ALT_INV_vagas_load[2]~input_o\ $end
+$var wire 1 1! \ALT_INV_entra_sai_idosos~input_o\ $end
+$var wire 1 2! \ALT_INV_entra_sai_normal~input_o\ $end
+$var wire 1 3! \ALT_INV_vagas_load[1]~input_o\ $end
+$var wire 1 4! \ALT_INV_conta_normal~input_o\ $end
+$var wire 1 5! \ALT_INV_conta_idosos~input_o\ $end
+$var wire 1 6! \ALT_INV_clear~input_o\ $end
+$var wire 1 7! \ALT_INV_vagas_load[0]~input_o\ $end
+$var wire 1 8! \ALT_INV_load~input_o\ $end
+$var wire 1 9! \ALT_INV_vagas_total[2]~input_o\ $end
+$var wire 1 :! \ALT_INV_vagas_total[3]~input_o\ $end
+$var wire 1 ;! \ALT_INV_vagas_total[0]~input_o\ $end
+$var wire 1 <! \ALT_INV_vagas_total[1]~input_o\ $end
+$var wire 1 =! \cont_total|ALT_INV_IQ[3]~6_combout\ $end
+$var wire 1 >! \cont_total|ALT_INV_IQ~5_combout\ $end
+$var wire 1 ?! \cont_total|ALT_INV_Add0~0_combout\ $end
+$var wire 1 @! \cont_total|ALT_INV_IQ~2_combout\ $end
+$var wire 1 A! \ALT_INV_entra_sai_total_s~combout\ $end
+$var wire 1 B! \cont_total|ALT_INV_IQ[0]~1_combout\ $end
+$var wire 1 C! \comp1|ALT_INV_maior_igual~2_combout\ $end
+$var wire 1 D! \comp1|ALT_INV_maior_igual~1_combout\ $end
+$var wire 1 E! \comp1|ALT_INV_maior_igual~0_combout\ $end
+$var wire 1 F! \cont_idosos|ALT_INV_IQ\ [3] $end
+$var wire 1 G! \cont_idosos|ALT_INV_IQ\ [2] $end
+$var wire 1 H! \cont_idosos|ALT_INV_IQ\ [1] $end
+$var wire 1 I! \cont_idosos|ALT_INV_IQ\ [0] $end
+$var wire 1 J! \cont_total|ALT_INV_IQ\ [3] $end
+$var wire 1 K! \cont_total|ALT_INV_IQ\ [2] $end
+$var wire 1 L! \cont_total|ALT_INV_IQ\ [1] $end
+$var wire 1 M! \cont_total|ALT_INV_IQ\ [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+1%
+1&
+1'
+0(
+09
+1:
+x;
+1<
+1=
+1>
+1?
+1@
+1A
+0B
+0C
+0D
+1E
+1F
+1G
+0H
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+1f
+0g
+0h
+1i
+1j
+0k
+0l
+1m
+0n
+0o
+0p
+1q
+0r
+0s
+0t
+1u
+1v
+1w
+0x
+1y
+1z
+0{
+0|
+0}
+1~
+1!!
+0"!
+0#!
+0$!
+0%!
+0&!
+1/!
+10!
+01!
+02!
+13!
+04!
+15!
+16!
+17!
+18!
+19!
+0:!
+0;!
+0<!
+0=!
+1>!
+0?!
+1@!
+1A!
+0B!
+1C!
+1D!
+0E!
+0)
+0*
+0+
+0,
+15
+06
+17
+18
+1I
+0J
+1K
+1L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+1F!
+1G!
+1H!
+1I!
+1J!
+1K!
+1L!
+1M!
+0-
+0.
+0/
+00
+01
+02
+03
+04
+$end
+#20000
+1#
+1B
+1c
+1*!
+0M!
+0f
+1t
+1Z
+1T
+14
+#40000
+0#
+0B
+0c
+#60000
+1#
+1B
+1c
+1)!
+0*!
+1M!
+0L!
+1f
+0Z
+1[
+0T
+1S
+04
+13
+#80000
+0#
+0B
+0c
+#100000
+1#
+1B
+1c
+1*!
+0M!
+0f
+0m
+0t
+0w
+1E!
+1?!
+1Z
+1n
+1T
+14
+#120000
+0#
+0B
+0c
+#130000
+0%
+0E
+0y
+14!
+0~
+1B!
+#140000
+1#
+1B
+1c
+#160000
+0#
+0B
+0c
+#170000
+1$
+1D
+1x
+05!
+1~
+1"!
+0B!
+#180000
+1#
+1B
+1c
+1(!
+0)!
+0*!
+1.!
+0I!
+1M!
+1L!
+0K!
+1f
+1w
+0!!
+1#!
+0E!
+1^
+0Z
+0[
+1\
+1X
+0T
+0S
+1R
+10
+04
+03
+12
+#200000
+0#
+0B
+0c
+#220000
+1#
+1B
+1c
+1*!
+0.!
+1-!
+0H!
+1I!
+0M!
+0f
+1t
+1!!
+1_
+0^
+1Z
+1W
+0X
+1T
+00
+1/
+14
+#240000
+0#
+0B
+0c
+#260000
+1#
+1B
+1c
+1)!
+0*!
+1.!
+0I!
+1M!
+0L!
+1f
+0!!
+0#!
+1$!
+1^
+0Z
+1[
+1X
+0T
+1S
+10
+04
+13
+#280000
+0#
+0$
+0B
+0D
+0x
+0c
+15!
+0~
+0"!
+1B!
+#290000
+1%
+1E
+1y
+04!
+1~
+0B!
+#300000
+1#
+1B
+1c
+1*!
+0M!
+0f
+1m
+0q
+0t
+0w
+1E!
+1=!
+0?!
+1Z
+0n
+1r
+1T
+14
+#320000
+0#
+0B
+0c
+#340000
+1#
+1B
+1c
+0(!
+1'!
+0)!
+0*!
+1M!
+1L!
+0J!
+1K!
+1|
+1f
+1w
+0E!
+0D!
+0Z
+0[
+1]
+0\
+0T
+0S
+1Q
+0R
+04
+03
+02
+11
+#360000
+0#
+0B
+0c
+#370000
+0%
+1$
+0E
+1D
+1x
+0y
+14!
+05!
+1"!
+#380000
+1#
+1B
+1c
+1*!
+0.!
+0-!
+1,!
+0G!
+1H!
+1I!
+0M!
+0f
+1t
+1!!
+1`
+0_
+0^
+1Z
+1V
+0W
+0X
+1T
+00
+0/
+1.
+14
+#400000
+0#
+0B
+0c
+#420000
+1#
+1B
+1c
+1)!
+0*!
+1.!
+0I!
+1M!
+0L!
+1f
+0!!
+1#!
+1^
+0Z
+1[
+1X
+0T
+1S
+10
+04
+13
+#440000
+0#
+0B
+0c
+#450000
+1%
+0$
+0&
+0'
+1E
+0D
+0G
+0F
+0i
+0j
+0x
+1y
+04!
+15!
+11!
+12!
+1k
+0#!
+0"!
+0A!
+0t
+#460000
+1#
+1B
+1c
+0)!
+1*!
+0M!
+1L!
+0f
+1Z
+0[
+1T
+0S
+14
+03
+#480000
+0#
+0B
+0c
+#500000
+1#
+1B
+1c
+0*!
+1M!
+1f
+0m
+1q
+1t
+0=!
+1?!
+0Z
+1n
+0r
+0T
+04
+#520000
+0#
+0B
+0c
+#530000
+0%
+1$
+0E
+1D
+1x
+0y
+14!
+05!
+1"!
+#540000
+1#
+1B
+1c
+1(!
+0'!
+1)!
+1*!
+0.!
+1I!
+0M!
+0L!
+1J!
+0K!
+0|
+0f
+0w
+1!!
+1#!
+0$!
+1E!
+1D!
+0^
+1Z
+1[
+0]
+1\
+0X
+1T
+1S
+0Q
+1R
+00
+14
+13
+12
+01
+#560000
+0#
+0B
+0c
+#580000
+1#
+1B
+1c
+0*!
+1.!
+1-!
+0,!
+1G!
+0H!
+0I!
+1M!
+1f
+0t
+1w
+0!!
+0E!
+0`
+1_
+1^
+0Z
+0V
+1W
+1X
+0T
+10
+1/
+0.
+04
+#600000
+0#
+0B
+0c
+#610000
+1%
+0$
+1&
+1'
+1E
+0D
+1G
+1F
+1i
+1j
+0x
+1y
+04!
+15!
+01!
+02!
+0k
+0#!
+1$!
+0"!
+1A!
+1t
+#620000
+1#
+1B
+1c
+1*!
+0M!
+0f
+1m
+0q
+0t
+0w
+1E!
+1=!
+0?!
+1Z
+0n
+1r
+1T
+14
+#640000
+0#
+0B
+0c
+#660000
+1#
+1B
+1c
+0(!
+1'!
+0)!
+0*!
+1M!
+1L!
+0J!
+1K!
+1|
+1f
+1w
+0E!
+0D!
+0Z
+0[
+1]
+0\
+0T
+0S
+1Q
+0R
+04
+03
+02
+11
+#680000
+0#
+0B
+0c
+#700000
+1#
+1B
+1c
+1*!
+0M!
+0f
+1t
+1Z
+1T
+14
+#720000
+0#
+0B
+0c
+#730000
+0%
+1$
+0E
+1D
+1x
+0y
+14!
+05!
+1"!
+#740000
+1#
+1B
+1c
+1)!
+0*!
+0.!
+0-!
+1,!
+0G!
+1H!
+1I!
+1M!
+0L!
+1f
+1!!
+1`
+0_
+0^
+0Z
+1[
+1V
+0W
+0X
+0T
+1S
+00
+0/
+1.
+04
+13
+#760000
+0#
+0B
+0c
+#780000
+1#
+1B
+1c
+1*!
+1.!
+0I!
+0M!
+0f
+0m
+0t
+0w
+0!!
+1#!
+1E!
+1?!
+1^
+1Z
+1n
+0~
+1&!
+1X
+1T
+1B!
+10
+14
+1b
+1Y
+1!
+#800000
+0#
+0B
+0c
+#820000
+1#
+1B
+1c
+0.!
+1-!
+0H!
+1I!
+1!!
+1_
+0^
+1W
+0X
+00
+1/
+#840000
+0#
+0B
+0c
+#860000
+1#
+1B
+1c
+1.!
+0I!
+0!!
+0#!
+0$!
+1%!
+1^
+1X
+10
+#880000
+0#
+0B
+0c
+#890000
+0$
+0D
+0x
+15!
+0"!
+#900000
+1#
+1B
+1c
+#920000
+0#
+0B
+0c
+#940000
+1#
+1B
+1c
+#960000
+0#
+0B
+0c
+#980000
+1#
+1B
+1c
+#1000000

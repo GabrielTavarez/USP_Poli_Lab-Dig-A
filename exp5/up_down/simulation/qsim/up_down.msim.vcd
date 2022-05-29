@@ -1,0 +1,543 @@
+$comment
+	File created using the following command:
+		vcd file up_down.msim.vcd -direction
+$end
+$date
+	Sun May 22 13:32:02 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module up_down_vhd_vec_tst $end
+$var wire 1 ! carrega $end
+$var wire 1 " clock $end
+$var wire 1 # conta $end
+$var wire 1 $ contagem [3] $end
+$var wire 1 % contagem [2] $end
+$var wire 1 & contagem [1] $end
+$var wire 1 ' contagem [0] $end
+$var wire 1 ( entra $end
+$var wire 1 ) entrada [3] $end
+$var wire 1 * entrada [2] $end
+$var wire 1 + entrada [1] $end
+$var wire 1 , entrada [0] $end
+$var wire 1 - zera $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var wire 1 1 devoe $end
+$var wire 1 2 devclrn $end
+$var wire 1 3 devpor $end
+$var wire 1 4 ww_devoe $end
+$var wire 1 5 ww_devclrn $end
+$var wire 1 6 ww_devpor $end
+$var wire 1 7 ww_clock $end
+$var wire 1 8 ww_zera $end
+$var wire 1 9 ww_conta $end
+$var wire 1 : ww_carrega $end
+$var wire 1 ; ww_entra $end
+$var wire 1 < ww_entrada [3] $end
+$var wire 1 = ww_entrada [2] $end
+$var wire 1 > ww_entrada [1] $end
+$var wire 1 ? ww_entrada [0] $end
+$var wire 1 @ ww_contagem [3] $end
+$var wire 1 A ww_contagem [2] $end
+$var wire 1 B ww_contagem [1] $end
+$var wire 1 C ww_contagem [0] $end
+$var wire 1 D \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 E \clock~input_o\ $end
+$var wire 1 F \clock~inputCLKENA0_outclk\ $end
+$var wire 1 G \carrega~input_o\ $end
+$var wire 1 H \entrada[0]~input_o\ $end
+$var wire 1 I \IQ~0_combout\ $end
+$var wire 1 J \zera~input_o\ $end
+$var wire 1 K \conta~input_o\ $end
+$var wire 1 L \IQ[0]~1_combout\ $end
+$var wire 1 M \entra~input_o\ $end
+$var wire 1 N \entrada[1]~input_o\ $end
+$var wire 1 O \IQ~2_combout\ $end
+$var wire 1 P \entrada[2]~input_o\ $end
+$var wire 1 Q \IQ~3_combout\ $end
+$var wire 1 R \entrada[3]~input_o\ $end
+$var wire 1 S \IQ~4_combout\ $end
+$var wire 1 T IQ [3] $end
+$var wire 1 U IQ [2] $end
+$var wire 1 V IQ [1] $end
+$var wire 1 W IQ [0] $end
+$var wire 1 X ALT_INV_IQ [3] $end
+$var wire 1 Y ALT_INV_IQ [2] $end
+$var wire 1 Z ALT_INV_IQ [1] $end
+$var wire 1 [ ALT_INV_IQ [0] $end
+$var wire 1 \ \ALT_INV_carrega~input_o\ $end
+$var wire 1 ] \ALT_INV_entrada[0]~input_o\ $end
+$var wire 1 ^ \ALT_INV_zera~input_o\ $end
+$var wire 1 _ \ALT_INV_conta~input_o\ $end
+$var wire 1 ` \ALT_INV_entra~input_o\ $end
+$var wire 1 a \ALT_INV_entrada[1]~input_o\ $end
+$var wire 1 b \ALT_INV_entrada[2]~input_o\ $end
+$var wire 1 c \ALT_INV_entrada[3]~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+1(
+0-
+0.
+1/
+x0
+11
+12
+13
+14
+15
+16
+07
+08
+19
+0:
+1;
+xD
+0E
+0F
+0G
+0H
+1I
+0J
+1K
+1L
+1M
+0N
+0O
+0P
+0Q
+0R
+0S
+1\
+1]
+1^
+0_
+0`
+1a
+1b
+1c
+0)
+0*
+0+
+0,
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0T
+0U
+0V
+0W
+1X
+1Y
+1Z
+1[
+0$
+0%
+0&
+0'
+$end
+#20000
+1"
+17
+1E
+1F
+1W
+0[
+0I
+1O
+1C
+1'
+#40000
+0"
+07
+0E
+0F
+#60000
+1"
+17
+1E
+1F
+0W
+1V
+0Z
+1[
+1I
+1B
+0C
+0'
+1&
+#80000
+0"
+07
+0E
+0F
+#100000
+1"
+17
+1E
+1F
+1W
+0[
+0I
+0O
+1Q
+1C
+1'
+#120000
+0"
+07
+0E
+0F
+#140000
+1"
+17
+1E
+1F
+0W
+0V
+1U
+0Y
+1Z
+1[
+1I
+1A
+0B
+0C
+0'
+0&
+1%
+#160000
+0"
+0#
+0(
+07
+09
+0;
+0M
+0K
+0E
+0F
+1_
+1`
+1O
+0Q
+0L
+#180000
+1"
+17
+1E
+1F
+#200000
+0"
+07
+0E
+0F
+#220000
+1"
+17
+1E
+1F
+#240000
+0"
+07
+0E
+0F
+#260000
+1"
+17
+1E
+1F
+#280000
+0"
+1#
+07
+19
+1K
+0E
+0F
+0_
+1L
+#300000
+1"
+17
+1E
+1F
+1W
+1V
+0U
+1Y
+0Z
+0[
+0I
+0A
+1B
+1C
+1'
+1&
+0%
+#320000
+0"
+07
+0E
+0F
+#340000
+1"
+17
+1E
+1F
+0W
+1[
+1I
+0O
+0C
+0'
+#360000
+0"
+07
+0E
+0F
+#380000
+1"
+17
+1E
+1F
+1W
+0V
+1Z
+0[
+0I
+0B
+1C
+1'
+0&
+#400000
+0"
+0#
+07
+09
+0K
+0E
+0F
+1_
+0L
+#420000
+1"
+17
+1E
+1F
+#440000
+0"
+07
+0E
+0F
+#460000
+1"
+1#
+1(
+17
+19
+1;
+1M
+1K
+1E
+1F
+0_
+0`
+1O
+1L
+#480000
+0"
+07
+0E
+0F
+#500000
+1"
+17
+1E
+1F
+0W
+1V
+0Z
+1[
+1I
+1B
+0C
+0'
+1&
+#520000
+0"
+07
+0E
+0F
+#540000
+1"
+17
+1E
+1F
+1W
+0[
+0I
+0O
+1Q
+1C
+1'
+#560000
+0"
+0#
+0(
+07
+09
+0;
+0M
+0K
+0E
+0F
+1_
+1`
+1O
+0Q
+0L
+#580000
+1"
+17
+1E
+1F
+#600000
+0"
+1-
+07
+18
+1J
+0E
+0F
+0^
+0W
+0V
+1Z
+1[
+1I
+1Q
+1S
+0B
+0C
+0'
+0&
+#620000
+1"
+17
+1E
+1F
+#640000
+0"
+0-
+07
+08
+0J
+0E
+0F
+1^
+#660000
+1"
+17
+1E
+1F
+#680000
+0"
+07
+0E
+0F
+#700000
+1"
+17
+1E
+1F
+#720000
+0"
+07
+0E
+0F
+#740000
+1"
+17
+1E
+1F
+#760000
+0"
+07
+0E
+0F
+#780000
+1"
+17
+1E
+1F
+#800000
+0"
+07
+0E
+0F
+#820000
+1"
+17
+1E
+1F
+#840000
+0"
+07
+0E
+0F
+#860000
+1"
+17
+1E
+1F
+#880000
+0"
+07
+0E
+0F
+#900000
+1"
+17
+1E
+1F
+#920000
+0"
+07
+0E
+0F
+#940000
+1"
+17
+1E
+1F
+#960000
+0"
+07
+0E
+0F
+#980000
+1"
+17
+1E
+1F
+#1000000

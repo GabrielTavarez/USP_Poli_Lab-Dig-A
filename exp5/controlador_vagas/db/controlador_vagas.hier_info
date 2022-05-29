@@ -1,0 +1,64 @@
+|controlador_vagas
+clock => up_down:contador.clock
+clear => up_down:contador.zera
+conta => up_down:contador.conta
+entra_sai => up_down:contador.entra_sai
+load => up_down:contador.carrega
+vagas_total[0] => comparador:comp1.B[0]
+vagas_total[1] => comparador:comp1.B[1]
+vagas_total[2] => comparador:comp2.B[0]
+vagas_total[3] => comparador:comp2.B[1]
+vagas_load[0] => up_down:contador.entrada[0]
+vagas_load[1] => up_down:contador.entrada[1]
+vagas_load[2] => up_down:contador.entrada[2]
+vagas_load[3] => up_down:contador.entrada[3]
+cheio <= cheio.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controlador_vagas|up_down:contador
+clock => IQ[0].CLK
+clock => IQ[1].CLK
+clock => IQ[2].CLK
+clock => IQ[3].CLK
+zera => IQ[0].ACLR
+zera => IQ[1].ACLR
+zera => IQ[2].ACLR
+zera => IQ[3].ACLR
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+entrada[0] => IQ.DATAB
+entrada[1] => IQ.DATAB
+entrada[2] => IQ.DATAB
+entrada[3] => IQ.DATAB
+contagem[0] <= IQ[0].DB_MAX_OUTPUT_PORT_TYPE
+contagem[1] <= IQ[1].DB_MAX_OUTPUT_PORT_TYPE
+contagem[2] <= IQ[2].DB_MAX_OUTPUT_PORT_TYPE
+contagem[3] <= IQ[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controlador_vagas|comparador:comp1
+A[0] => Equal0.IN1
+A[1] => Equal0.IN0
+B[0] => Equal0.IN3
+B[1] => Equal0.IN2
+igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controlador_vagas|comparador:comp2
+A[0] => Equal0.IN1
+A[1] => Equal0.IN0
+B[0] => Equal0.IN3
+B[1] => Equal0.IN2
+igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cheio",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total[3]",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_load[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "clear",
+					"strict" : false
+				},
+				{
+					"name" : "conta",
+					"strict" : false
+				},
+				{
+					"name" : "entra_sai",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_load[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_load[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_load[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

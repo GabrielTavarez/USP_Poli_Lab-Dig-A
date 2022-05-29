@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Sophia/Documents/parasitas/exp5/controlador_vagas/simulation/qsim
+Econtrolador_vagas
+Z1 w1653240561
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 41KVoNENnj;RUmMIITVQg1
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 MmMkVfW5JWkR?lm<VcfRO1
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
+R0
+Z11 8controlador_vagas.vho
+Z12 Fcontrolador_vagas.vho
+l0
+L39
+VPZLn?TE7iKcoDnDaT_`oo2
+!s100 eQl>5`BjWAMJNl>143nnU3
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1653240564
+!i10b 1
+Z15 !s108 1653240564.000000
+Z16 !s90 -work|work|controlador_vagas.vho|
+Z17 !s107 controlador_vagas.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 17 controlador_vagas 0 22 PZLn?TE7iKcoDnDaT_`oo2
+l126
+L69
+V6;QK^^aeTzPo_HFY]P0]l2
+!s100 2^41jai7YaKk>NG@8iJfS0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Econtrolador_vagas_vhd_vec_tst
+Z20 w1653240556
+R8
+R9
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32
+VH355RGJK2b8zkiTE9TST?0
+!s100 53dDWAU=ofj=UL2F5^oQG0
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Acontrolador_vagas_arch
+R8
+R9
+DEx4 work 29 controlador_vagas_vhd_vec_tst 0 22 H355RGJK2b8zkiTE9TST?0
+l57
+L34
+V]Vl338GU^f9`KzLNaQgLN1
+!s100 1ejCnQ8f14`Xj]`fIa82S1
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19

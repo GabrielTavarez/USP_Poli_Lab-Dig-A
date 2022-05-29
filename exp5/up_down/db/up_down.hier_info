@@ -1,0 +1,31 @@
+|up_down
+clock => IQ[0].CLK
+clock => IQ[1].CLK
+clock => IQ[2].CLK
+clock => IQ[3].CLK
+zera => IQ[0].ACLR
+zera => IQ[1].ACLR
+zera => IQ[2].ACLR
+zera => IQ[3].ACLR
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+conta => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+carrega => IQ.OUTPUTSELECT
+entra => IQ.OUTPUTSELECT
+entra => IQ.OUTPUTSELECT
+entra => IQ.OUTPUTSELECT
+entra => IQ.OUTPUTSELECT
+entrada[0] => IQ.DATAB
+entrada[1] => IQ.DATAB
+entrada[2] => IQ.DATAB
+entrada[3] => IQ.DATAB
+contagem[0] <= IQ[0].DB_MAX_OUTPUT_PORT_TYPE
+contagem[1] <= IQ[1].DB_MAX_OUTPUT_PORT_TYPE
+contagem[2] <= IQ[2].DB_MAX_OUTPUT_PORT_TYPE
+contagem[3] <= IQ[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

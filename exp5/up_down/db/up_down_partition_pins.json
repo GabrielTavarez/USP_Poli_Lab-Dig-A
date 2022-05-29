@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "contagem[0]",
+					"strict" : false
+				},
+				{
+					"name" : "contagem[1]",
+					"strict" : false
+				},
+				{
+					"name" : "contagem[2]",
+					"strict" : false
+				},
+				{
+					"name" : "contagem[3]",
+					"strict" : false
+				},
+				{
+					"name" : "carrega",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "zera",
+					"strict" : false
+				},
+				{
+					"name" : "conta",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[1]",
+					"strict" : false
+				},
+				{
+					"name" : "entra",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[2]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

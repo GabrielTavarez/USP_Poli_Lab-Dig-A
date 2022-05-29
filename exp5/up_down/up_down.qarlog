@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	C:/Users/Sophia/Documents/parasitas/exp5/up_down/up_down.qarlog
+
+Archive:	C:/Users/Sophia/Documents/parasitas/exp5/up_down/up_down.qar
+Date:		Mon May 23 09:53:55 2022
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Sophia/Documents/parasitas/exp5/up_down/Waveform.vwf
+C:/Users/Sophia/Documents/parasitas/exp5/up_down/up_down.qpf
+C:/Users/Sophia/Documents/parasitas/exp5/up_down/up_down.qsf
+C:/Users/Sophia/Documents/parasitas/exp5/up_down/up_down.vhd
+c:/intelfpga_lite/16.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

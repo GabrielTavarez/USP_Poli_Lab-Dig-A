@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Sophia/Documents/parasitas/exp5/up_down/simulation/qsim
+Eup_down
+Z1 w1653237118
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 41KVoNENnj;RUmMIITVQg1
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 MmMkVfW5JWkR?lm<VcfRO1
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
+R0
+Z11 8up_down.vho
+Z12 Fup_down.vho
+l0
+L39
+VzPc4SB^GZ^O?m2o9Q;3PV0
+!s100 aU]NRZYW;kCSZC<;n`z3i1
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1653237121
+!i10b 1
+Z15 !s108 1653237120.000000
+Z16 !s90 -work|work|up_down.vho|
+Z17 !s107 up_down.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 7 up_down 0 22 zPc4SB^GZ^O?m2o9Q;3PV0
+l111
+L67
+VkALOD_anoC7NYA<?8UFgL1
+!s100 G@dRBU0=>;EMPzn>bznl>1
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Eup_down_vhd_vec_tst
+Z20 w1653237113
+R8
+R9
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32
+V9OHJDYAKB@lF;oLG1Q^4e3
+!s100 GcoS?eo=nz9UTlRklCQJf3
+R13
+32
+R14
+!i10b 1
+Z23 !s108 1653237121.000000
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Aup_down_arch
+R8
+R9
+Z26 DEx4 work 19 up_down_vhd_vec_tst 0 22 9OHJDYAKB@lF;oLG1Q^4e3
+l55
+L34
+VofG^OO@Y@K36T3l@]k7gJ2
+!s100 ^@zXU81VzhMOO60f_M2Rd3
+R13
+32
+R14
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R18
+R19
