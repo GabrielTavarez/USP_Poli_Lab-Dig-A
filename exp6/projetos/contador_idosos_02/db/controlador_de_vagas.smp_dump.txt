@@ -1,0 +1,8 @@
+
+State Machine - |controlador_de_vagas|unidade_de_controle:UC|CurrentState
+Name CurrentState.cheio CurrentState.inc_normal CurrentState.inc_idosos CurrentState.vazio CurrentState.zera_vagas 
+CurrentState.zera_vagas 0 0 0 0 0 
+CurrentState.vazio 0 0 0 1 1 
+CurrentState.inc_idosos 0 0 1 0 1 
+CurrentState.inc_normal 0 1 0 0 1 
+CurrentState.cheio 1 0 0 0 1 
