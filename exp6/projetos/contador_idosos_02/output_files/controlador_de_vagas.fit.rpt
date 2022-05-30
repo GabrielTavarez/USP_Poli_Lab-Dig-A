@@ -1,6 +1,6 @@
 Fitter report for controlador_de_vagas
-Sun May 29 21:35:26 2022
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Mon May 30 15:46:12 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -43,36 +43,36 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun May 29 21:35:26 2022       ;
-; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Fitter Status                   ; Successful - Mon May 30 15:46:12 2022       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; controlador_de_vagas                        ;
 ; Top-level Entity Name           ; controlador_de_vagas                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; 14 / 18,480 ( < 1 % )                       ;
-; Total registers                 ; 14                                          ;
-; Total pins                      ; 29 / 224 ( 13 % )                           ;
+; Total registers                 ; 13                                          ;
+; Total pins                      ; 19 / 224 ( 8 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
 ; Total RAM Blocks                ; 0 / 308 ( 0 % )                             ;
@@ -86,63 +86,63 @@ agreement for further details.
 +---------------------------------+---------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Settings                                                                                                                                            ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
-; Option                                                                     ; Setting                               ; Default Value                         ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
-; Device                                                                     ; 5CEBA4F23C7                           ;                                       ;
-; Minimum Core Junction Temperature                                          ; 0                                     ;                                       ;
-; Maximum Core Junction Temperature                                          ; 85                                    ;                                       ;
-; Use smart compilation                                                      ; Off                                   ; Off                                   ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On                                    ;
-; Enable compact report table                                                ; Off                                   ; Off                                   ;
-; Router Timing Optimization Level                                           ; Normal                                ; Normal                                ;
-; Perform Clocking Topology Analysis During Routing                          ; Off                                   ; Off                                   ;
-; Placement Effort Multiplier                                                ; 1.0                                   ; 1.0                                   ;
-; Device initialization clock source                                         ; INIT_INTOSC                           ; INIT_INTOSC                           ;
-; Optimize Hold Timing                                                       ; All Paths                             ; All Paths                             ;
-; Optimize Multi-Corner Timing                                               ; On                                    ; On                                    ;
-; Auto RAM to MLAB Conversion                                                ; On                                    ; On                                    ;
-; Equivalent RAM and MLAB Power Up                                           ; Auto                                  ; Auto                                  ;
-; Equivalent RAM and MLAB Paused Read Capabilities                           ; Care                                  ; Care                                  ;
-; PowerPlay Power Optimization During Fitting                                ; Normal compilation                    ; Normal compilation                    ;
-; SSN Optimization                                                           ; Off                                   ; Off                                   ;
-; Optimize Timing                                                            ; Normal compilation                    ; Normal compilation                    ;
-; Optimize Timing for ECOs                                                   ; Off                                   ; Off                                   ;
-; Regenerate Full Fit Report During ECO Compiles                             ; Off                                   ; Off                                   ;
-; Optimize IOC Register Placement for Timing                                 ; Normal                                ; Normal                                ;
-; Final Placement Optimizations                                              ; Automatically                         ; Automatically                         ;
-; Fitter Aggressive Routability Optimizations                                ; Automatically                         ; Automatically                         ;
-; Fitter Initial Placement Seed                                              ; 1                                     ; 1                                     ;
-; Periphery to Core Placement and Routing Optimization                       ; Off                                   ; Off                                   ;
-; Weak Pull-Up Resistor                                                      ; Off                                   ; Off                                   ;
-; Enable Bus-Hold Circuitry                                                  ; Off                                   ; Off                                   ;
-; Auto Packed Registers                                                      ; Auto                                  ; Auto                                  ;
-; Auto Delay Chains                                                          ; On                                    ; On                                    ;
-; Auto Delay Chains for High Fanout Input Pins                               ; Off                                   ; Off                                   ;
-; Treat Bidirectional Pin as Output Pin                                      ; Off                                   ; Off                                   ;
-; Perform Physical Synthesis for Combinational Logic for Fitting             ; Off                                   ; Off                                   ;
-; Perform Physical Synthesis for Combinational Logic for Performance         ; Off                                   ; Off                                   ;
-; Perform Register Duplication for Performance                               ; Off                                   ; Off                                   ;
-; Perform Register Retiming for Performance                                  ; Off                                   ; Off                                   ;
-; Perform Asynchronous Signal Pipelining                                     ; Off                                   ; Off                                   ;
-; Fitter Effort                                                              ; Auto Fit                              ; Auto Fit                              ;
-; Physical Synthesis Effort Level                                            ; Normal                                ; Normal                                ;
-; Logic Cell Insertion - Logic Duplication                                   ; Auto                                  ; Auto                                  ;
-; Auto Register Duplication                                                  ; Auto                                  ; Auto                                  ;
-; Auto Global Clock                                                          ; On                                    ; On                                    ;
-; Auto Global Register Control Signals                                       ; On                                    ; On                                    ;
-; Reserve all unused pins                                                    ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
-; Synchronizer Identification                                                ; Auto                                  ; Auto                                  ;
-; Enable Beneficial Skew Optimization                                        ; On                                    ; On                                    ;
-; Optimize Design for Metastability                                          ; On                                    ; On                                    ;
-; Active Serial clock source                                                 ; FREQ_100MHz                           ; FREQ_100MHz                           ;
-; Force Fitter to Avoid Periphery Placement Warnings                         ; Off                                   ; Off                                   ;
-; Clamping Diode                                                             ; Off                                   ; Off                                   ;
-; Enable input tri-state on active configuration pins in user mode           ; Off                                   ; Off                                   ;
-; Advanced Physical Optimization                                             ; On                                    ; On                                    ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                                                                    ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Option                                                             ; Setting                               ; Default Value                         ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Device                                                             ; 5CEBA4F23C7                           ;                                       ;
+; Minimum Core Junction Temperature                                  ; 0                                     ;                                       ;
+; Maximum Core Junction Temperature                                  ; 85                                    ;                                       ;
+; Use smart compilation                                              ; Off                                   ; Off                                   ;
+; Enable parallel Assembler and Timing Analyzer during compilation   ; On                                    ; On                                    ;
+; Enable compact report table                                        ; Off                                   ; Off                                   ;
+; Router Timing Optimization Level                                   ; Normal                                ; Normal                                ;
+; Perform Clocking Topology Analysis During Routing                  ; Off                                   ; Off                                   ;
+; Placement Effort Multiplier                                        ; 1.0                                   ; 1.0                                   ;
+; Device initialization clock source                                 ; INIT_INTOSC                           ; INIT_INTOSC                           ;
+; Optimize Hold Timing                                               ; All Paths                             ; All Paths                             ;
+; Optimize Multi-Corner Timing                                       ; On                                    ; On                                    ;
+; Auto RAM to MLAB Conversion                                        ; On                                    ; On                                    ;
+; Equivalent RAM and MLAB Power Up                                   ; Auto                                  ; Auto                                  ;
+; Equivalent RAM and MLAB Paused Read Capabilities                   ; Care                                  ; Care                                  ;
+; Power Optimization During Fitting                                  ; Normal compilation                    ; Normal compilation                    ;
+; SSN Optimization                                                   ; Off                                   ; Off                                   ;
+; Optimize Timing                                                    ; Normal compilation                    ; Normal compilation                    ;
+; Optimize Timing for ECOs                                           ; Off                                   ; Off                                   ;
+; Regenerate Full Fit Report During ECO Compiles                     ; Off                                   ; Off                                   ;
+; Optimize IOC Register Placement for Timing                         ; Normal                                ; Normal                                ;
+; Final Placement Optimizations                                      ; Automatically                         ; Automatically                         ;
+; Fitter Aggressive Routability Optimizations                        ; Automatically                         ; Automatically                         ;
+; Fitter Initial Placement Seed                                      ; 1                                     ; 1                                     ;
+; Periphery to Core Placement and Routing Optimization               ; Off                                   ; Off                                   ;
+; Weak Pull-Up Resistor                                              ; Off                                   ; Off                                   ;
+; Enable Bus-Hold Circuitry                                          ; Off                                   ; Off                                   ;
+; Auto Packed Registers                                              ; Auto                                  ; Auto                                  ;
+; Auto Delay Chains                                                  ; On                                    ; On                                    ;
+; Auto Delay Chains for High Fanout Input Pins                       ; Off                                   ; Off                                   ;
+; Treat Bidirectional Pin as Output Pin                              ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Fitting     ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Performance ; Off                                   ; Off                                   ;
+; Perform Register Duplication for Performance                       ; Off                                   ; Off                                   ;
+; Perform Register Retiming for Performance                          ; Off                                   ; Off                                   ;
+; Perform Asynchronous Signal Pipelining                             ; Off                                   ; Off                                   ;
+; Fitter Effort                                                      ; Auto Fit                              ; Auto Fit                              ;
+; Physical Synthesis Effort Level                                    ; Normal                                ; Normal                                ;
+; Logic Cell Insertion - Logic Duplication                           ; Auto                                  ; Auto                                  ;
+; Auto Register Duplication                                          ; Auto                                  ; Auto                                  ;
+; Auto Global Clock                                                  ; On                                    ; On                                    ;
+; Auto Global Register Control Signals                               ; On                                    ; On                                    ;
+; Reserve all unused pins                                            ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
+; Synchronizer Identification                                        ; Auto                                  ; Auto                                  ;
+; Enable Beneficial Skew Optimization                                ; On                                    ; On                                    ;
+; Optimize Design for Metastability                                  ; On                                    ; On                                    ;
+; Active Serial clock source                                         ; FREQ_100MHz                           ; FREQ_100MHz                           ;
+; Force Fitter to Avoid Periphery Placement Warnings                 ; Off                                   ; Off                                   ;
+; Clamping Diode                                                     ; Off                                   ; Off                                   ;
+; Enable input tri-state on active configuration pins in user mode   ; Off                                   ; Off                                   ;
+; Advanced Physical Optimization                                     ; On                                    ; On                                    ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
 
 
 +------------------------------------------+
@@ -158,20 +158,19 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.3%      ;
 ;     Processor 4            ;   0.2%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                                                                                                                            ;
-+--------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+------------------------------------------------------+------------------+-----------------------+
-; Node                                       ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                                     ; Destination Port ; Destination Port Name ;
-+--------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+------------------------------------------------------+------------------+-----------------------+
-; clock~inputCLKENA0                         ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                                      ;                  ;                       ;
-; fluxo_de_dados:FD|up_down:cont_total|IQ[0] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; fluxo_de_dados:FD|up_down:cont_total|IQ[0]~DUPLICATE ;                  ;                       ;
-+--------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+------------------------------------------------------+------------------+-----------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                     ;
++--------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
+; Node               ; Action  ; Operation ; Reason                     ; Node Port ; Node Port Name ; Destination Node ; Destination Port ; Destination Port Name ;
++--------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
+; clock~inputCLKENA0 ; Created ; Placement ; Fitter Periphery Placement ;           ;                ;                  ;                  ;                       ;
++--------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -180,8 +179,8 @@ agreement for further details.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 97 ) ; 0.00 % ( 0 / 97 )          ; 0.00 % ( 0 / 97 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 97 ) ; 0.00 % ( 0 / 97 )          ; 0.00 % ( 0 / 97 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 76 ) ; 0.00 % ( 0 / 76 )          ; 0.00 % ( 0 / 76 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 76 ) ; 0.00 % ( 0 / 76 )          ; 0.00 % ( 0 / 76 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -204,7 +203,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 97 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 76 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -212,7 +211,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/output_files/controlador_de_vagas.pin.
+The pin-out file can be found in C:/Users/Operador/Documents/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/output_files/controlador_de_vagas.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -222,12 +221,12 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 14 / 18,480        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 14                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 16 / 18,480        ; < 1 % ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 15 / 18,480        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 7                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 9                  ;       ;
+;         [b] ALMs used for LUT logic                         ; 8                  ;       ;
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 18,480         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 18,480         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18,480         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -236,29 +235,29 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 4 / 1,848          ; < 1 % ;
-;     -- Logic LABs                                           ; 4                  ;       ;
+; Total LABs:  partially or completely used                   ; 3 / 1,848          ; < 1 % ;
+;     -- Logic LABs                                           ; 3                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 26                 ;       ;
+; Combinational ALUT usage for logic                          ; 25                 ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 3                  ;       ;
 ;     -- 5 input functions                                    ; 5                  ;       ;
 ;     -- 4 input functions                                    ; 8                  ;       ;
-;     -- <=3 input functions                                  ; 10                 ;       ;
+;     -- <=3 input functions                                  ; 9                  ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 14                 ;       ;
+; Dedicated logic registers                                   ; 13                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 13 / 36,960        ; < 1 % ;
-;         -- Secondary logic registers                        ; 1 / 36,960         ; < 1 % ;
+;         -- Secondary logic registers                        ; 0 / 36,960         ; 0 %   ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 13                 ;       ;
-;         -- Routing optimization registers                   ; 1                  ;       ;
+;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
-; I/O pins                                                    ; 29 / 224           ; 13 %  ;
-;     -- Clock pins                                           ; 3 / 9              ; 33 %  ;
+; I/O pins                                                    ; 19 / 224           ; 8 %   ;
+;     -- Clock pins                                           ; 0 / 9              ; 0 %   ;
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; M10K blocks                                                 ; 0 / 308            ; 0 %   ;
@@ -280,12 +279,12 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; Remote update blocks                                        ; 0 / 1              ; 0 %   ;
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.4% / 0.2% ;       ;
-; Maximum fan-out                                             ; 14                 ;       ;
-; Highest non-global fan-out                                  ; 14                 ;       ;
-; Total fan-out                                               ; 190                ;       ;
-; Average fan-out                                             ; 1.92               ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.4% / 0.4% / 0.6% ;       ;
+; Maximum fan-out                                             ; 13                 ;       ;
+; Highest non-global fan-out                                  ; 13                 ;       ;
+; Total fan-out                                               ; 167                ;       ;
+; Average fan-out                                             ; 2.17               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -296,12 +295,12 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 14 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 14                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 16 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 15 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 7                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 9                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 8                    ; 0                              ;
 ;         [c] ALMs used for registers                         ; 0                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18480 ( 0 % )    ; 0 / 18480 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -310,16 +309,16 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 4 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 4                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 3 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 3                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 26                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 25                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
 ;     -- 6 input functions                                    ; 3                    ; 0                              ;
 ;     -- 5 input functions                                    ; 5                    ; 0                              ;
 ;     -- 4 input functions                                    ; 8                    ; 0                              ;
-;     -- <=3 input functions                                  ; 10                   ; 0                              ;
+;     -- <=3 input functions                                  ; 9                    ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
@@ -328,14 +327,14 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
 ;         -- Primary logic registers                          ; 13 / 36960 ( < 1 % ) ; 0 / 36960 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 1 / 36960 ( < 1 % )  ; 0 / 36960 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 0 / 36960 ( 0 % )    ; 0 / 36960 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
 ;         -- Design implementation registers                  ; 13                   ; 0                              ;
-;         -- Routing optimization registers                   ; 1                    ; 0                              ;
+;         -- Routing optimization registers                   ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
-; I/O pins                                                    ; 29                   ; 0                              ;
+; I/O pins                                                    ; 19                   ; 0                              ;
 ; I/O registers                                               ; 0                    ; 0                              ;
 ; Total block memory bits                                     ; 0                    ; 0                              ;
 ; Total block memory implementation bits                      ; 0                    ; 0                              ;
@@ -348,16 +347,16 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 190                  ; 0                              ;
-;     -- Registered Connections                               ; 56                   ; 0                              ;
+;     -- Total Connections                                    ; 167                  ; 0                              ;
+;     -- Registered Connections                               ; 52                   ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
 ;     -- hard_block:auto_generated_inst                       ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Partition Interface                                         ;                      ;                                ;
-;     -- Input Ports                                          ; 14                   ; 0                              ;
-;     -- Output Ports                                         ; 15                   ; 0                              ;
+;     -- Input Ports                                          ; 10                   ; 0                              ;
+;     -- Output Ports                                         ; 9                    ; 0                              ;
 ;     -- Bidir Ports                                          ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Registered Ports                                            ;                      ;                                ;
@@ -381,60 +380,50 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 +------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name             ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; clear            ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 14                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; clock            ; M16   ; 5B       ; 54           ; 18           ; 60           ; 14                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; conta_idosos     ; Y14   ; 4A       ; 36           ; 0            ; 17           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; conta_normal     ; V14   ; 4A       ; 38           ; 0            ; 17           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; entra_sai_idosos ; AB20  ; 4A       ; 40           ; 0            ; 91           ; 9                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; entra_sai_normal ; Y15   ; 4A       ; 36           ; 0            ; 0            ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; vagas_load[0]    ; R14   ; 4A       ; 50           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; vagas_load[1]    ; F13   ; 7A       ; 40           ; 45           ; 57           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; vagas_load[2]    ; G16   ; 7A       ; 50           ; 45           ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; vagas_load[3]    ; B6    ; 8A       ; 14           ; 45           ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; vagas_total[0]   ; AB18  ; 4A       ; 38           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; vagas_total[1]   ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; vagas_total[2]   ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; vagas_total[3]   ; U13   ; 4A       ; 33           ; 0            ; 40           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; clear            ; U7    ; 3A       ; 10           ; 0            ; 91           ; 13                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; clock            ; A12   ; 7A       ; 36           ; 45           ; 51           ; 13                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; conta_idosos     ; V13   ; 4A       ; 33           ; 0            ; 57           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; conta_normal     ; U13   ; 4A       ; 33           ; 0            ; 40           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; entra_sai_idosos ; T12   ; 4A       ; 34           ; 0            ; 17           ; 7                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; entra_sai_normal ; T13   ; 4A       ; 34           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; vagas_total[0]   ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; vagas_total[1]   ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; vagas_total[2]   ; AB13  ; 4A       ; 33           ; 0            ; 91           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; vagas_total[3]   ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
-+------------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; Name                   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
-+------------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; cheio                  ; Y16   ; 4A       ; 40           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; cheio_dp_sm            ; Y17   ; 4A       ; 40           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; clear_sm_dp            ; AA15  ; 4A       ; 36           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; conta_idosos_sm_dp     ; AA14  ; 4A       ; 34           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; conta_normal_sm_dp     ; T13   ; 4A       ; 34           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; entra_sai_idosos_sm_dp ; AB21  ; 4A       ; 40           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; entra_sai_normal_sm_dp ; P9    ; 3B       ; 29           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; vagas_out_idosos[0]    ; N9    ; 3B       ; 29           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; vagas_out_idosos[1]    ; Y11   ; 3B       ; 29           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; vagas_out_idosos[2]    ; T12   ; 4A       ; 34           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; vagas_out_idosos[3]    ; AA12  ; 3B       ; 29           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; vagas_out_total[0]     ; AB17  ; 4A       ; 38           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; vagas_out_total[1]     ; AB13  ; 4A       ; 33           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; vagas_out_total[2]     ; V15   ; 4A       ; 38           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; vagas_out_total[3]     ; V13   ; 4A       ; 33           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-+------------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++---------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
+; Name                ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
++---------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
+; cheio               ; N2    ; 2A       ; 0            ; 19           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; vagas_out_idosos[0] ; AA2   ; 2A       ; 0            ; 18           ; 77           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; vagas_out_idosos[1] ; AA1   ; 2A       ; 0            ; 18           ; 94           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; vagas_out_idosos[2] ; W2    ; 2A       ; 0            ; 18           ; 60           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; vagas_out_idosos[3] ; Y3    ; 2A       ; 0            ; 18           ; 43           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; vagas_out_total[0]  ; U2    ; 2A       ; 0            ; 19           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; vagas_out_total[1]  ; U1    ; 2A       ; 0            ; 19           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; vagas_out_total[2]  ; L2    ; 2A       ; 0            ; 20           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; vagas_out_total[3]  ; L1    ; 2A       ; 0            ; 20           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
++---------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+----------------------------------------------------------------------------+
-; I/O Bank Usage                                                             ;
-+----------+------------------+---------------+--------------+---------------+
-; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
-+----------+------------------+---------------+--------------+---------------+
-; 2A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 4 / 32 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 21 / 48 ( 44 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 5B       ; 1 / 16 ( 6 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 7A       ; 2 / 48 ( 4 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 8A       ; 1 / 32 ( 3 % )   ; 2.5V          ; --           ; 2.5V          ;
-+----------+------------------+---------------+--------------+---------------+
++---------------------------------------------------------------------------+
+; I/O Bank Usage                                                            ;
++----------+-----------------+---------------+--------------+---------------+
+; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
++----------+-----------------+---------------+--------------+---------------+
+; 2A       ; 9 / 16 ( 56 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 3A       ; 1 / 16 ( 6 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 8 / 48 ( 17 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 5B       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 7A       ; 1 / 48 ( 2 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 8A       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
++----------+-----------------+---------------+--------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -453,7 +442,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; A9       ; 262        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A10      ; 260        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A11      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; A12      ; 242        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; A12      ; 242        ; 7A       ; clock                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; A13      ; 230        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A14      ; 218        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A15      ; 216        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -464,8 +453,8 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; A20      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A21      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A22      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; AA1      ; 29         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AA2      ; 31         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AA1      ; 29         ; 2A       ; vagas_out_idosos[1]             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; AA2      ; 31         ; 2A       ; vagas_out_idosos[0]             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; AA3      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA4      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA5      ; 53         ; 3A       ; ^AS_DATA2, DATA2                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
@@ -475,10 +464,10 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; AA9      ; 89         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA10     ; 87         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA11     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AA12     ; 105        ; 3B       ; vagas_out_idosos[3]             ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA13     ; 113        ; 4A       ; clear                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA14     ; 111        ; 4A       ; conta_idosos_sm_dp              ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA15     ; 116        ; 4A       ; clear_sm_dp                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA12     ; 105        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AA13     ; 113        ; 4A       ; vagas_total[1]                  ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA14     ; 111        ; 4A       ; vagas_total[0]                  ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA15     ; 116        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA16     ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AA17     ; 127        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA18     ; 129        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -497,23 +486,23 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; AB9      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB10     ; 98         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB11     ; 100        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AB12     ; 108        ; 4A       ; vagas_total[2]                  ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB13     ; 106        ; 4A       ; vagas_out_total[1]              ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB12     ; 108        ; 4A       ; vagas_total[3]                  ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AB13     ; 106        ; 4A       ; vagas_total[2]                  ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AB14     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB15     ; 114        ; 4A       ; vagas_total[1]                  ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB15     ; 114        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB16     ;            ; 4A       ; VREFB4AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB17     ; 119        ; 4A       ; vagas_out_total[0]              ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB18     ; 121        ; 4A       ; vagas_total[0]                  ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB17     ; 119        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AB18     ; 121        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB19     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB20     ; 122        ; 4A       ; entra_sai_idosos                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB21     ; 124        ; 4A       ; entra_sai_idosos_sm_dp          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB20     ; 122        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AB21     ; 124        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB22     ; 135        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B3       ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B4       ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B5       ; 266        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; B6       ; 268        ; 8A       ; vagas_load[3]                   ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; B6       ; 268        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B7       ; 270        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B8       ;            ; 8A       ; VREFB8AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B9       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -608,7 +597,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; F10      ; 253        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; F11      ;            ; 7A       ; VCCIO7A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; F12      ; 238        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; F13      ; 233        ; 7A       ; vagas_load[1]                   ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; F13      ; 233        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; F14      ; 226        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; F15      ; 217        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; F16      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -633,7 +622,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; G13      ; 237        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G14      ;            ; 7A       ; VCCIO7A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; G15      ; 224        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; G16      ; 210        ; 7A       ; vagas_load[2]                   ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; G16      ; 210        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G17      ; 208        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G18      ; 211        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; G19      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -706,8 +695,8 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; K20      ; 203        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; K21      ; 183        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; K22      ; 185        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; L1       ; 21         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; L2       ; 23         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; L1       ; 21         ; 2A       ; vagas_out_total[3]              ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; L2       ; 23         ; 2A       ; vagas_out_total[2]              ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; L3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L4       ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; L5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -743,7 +732,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; M13      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; M14      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; M16      ; 172        ; 5B       ; clock                           ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; M16      ; 172        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M17      ;            ; 5B       ; VCCPD5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; M18      ; 176        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M19      ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -751,14 +740,14 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; M21      ; 181        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M22      ; 175        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; N1       ; 24         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; N2       ; 26         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; N2       ; 26         ; 2A       ; cheio                           ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; N3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N4       ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N6       ; 64         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; N7       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N8       ; 80         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; N9       ; 104        ; 3B       ; vagas_out_idosos[0]             ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; N9       ; 104        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; N10      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N11      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N12      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
@@ -780,7 +769,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; P6       ; 62         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P7       ; 73         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P8       ; 78         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; P9       ; 102        ; 3B       ; entra_sai_normal_sm_dp          ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; P9       ; 102        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P10      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P12      ; 97         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -807,7 +796,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; R11      ; 101        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R12      ; 95         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; R14      ; 144        ; 4A       ; vagas_load[0]                   ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R14      ; 144        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R15      ; 161        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; R16      ; 163        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; R17      ; 165        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -827,8 +816,8 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; T9       ; 83         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T10      ; 91         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T11      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; T12      ; 110        ; 4A       ; vagas_out_idosos[2]             ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; T13      ; 112        ; 4A       ; conta_normal_sm_dp              ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T12      ; 110        ; 4A       ; entra_sai_idosos                ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; T13      ; 112        ; 4A       ; entra_sai_normal                ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; T14      ; 126        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T15      ; 159        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T16      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -838,19 +827,19 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; T20      ; 156        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T21      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T22      ; 158        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; U1       ; 25         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; U2       ; 27         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; U1       ; 25         ; 2A       ; vagas_out_total[1]              ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; U2       ; 27         ; 2A       ; vagas_out_total[0]              ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; U3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U6       ; 67         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; U7       ; 59         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; U7       ; 59         ; 3A       ; clear                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; U8       ; 61         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U9       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U10      ; 85         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U11      ; 94         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U12      ; 96         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; U13      ; 109        ; 4A       ; vagas_total[3]                  ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U13      ; 109        ; 4A       ; conta_normal                    ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; U14      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U15      ; 128        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U16      ; 150        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -872,9 +861,9 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; V10      ; 77         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V11      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; V13      ; 107        ; 4A       ; vagas_out_total[3]              ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V14      ; 118        ; 4A       ; conta_normal                    ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V15      ; 120        ; 4A       ; vagas_out_total[2]              ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V13      ; 107        ; 4A       ; conta_idosos                    ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; V14      ; 118        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; V15      ; 120        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V16      ; 134        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V17      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V18      ; 149        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -883,7 +872,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; V21      ; 148        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V22      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W1       ;            ; 2A       ; VREFB2AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; W2       ; 28         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; W2       ; 28         ; 2A       ; vagas_out_idosos[2]             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; W3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W5       ; 54         ; 3A       ; #TDI                            ; input  ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -906,7 +895,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; W22      ; 140        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; Y3       ; 30         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; Y3       ; 30         ; 2A       ; vagas_out_idosos[3]             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; Y4       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; Y5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y6       ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -914,13 +903,13 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; Y8       ;            ; 3A       ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; Y9       ; 92         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y10      ; 90         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; Y11      ; 103        ; 3B       ; vagas_out_idosos[1]             ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y11      ; 103        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y12      ;            ; 3B       ; VREFB3BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y13      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; Y14      ; 115        ; 4A       ; conta_idosos                    ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y15      ; 117        ; 4A       ; entra_sai_normal                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y16      ; 123        ; 4A       ; cheio                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y17      ; 125        ; 4A       ; cheio_dp_sm                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y14      ; 115        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; Y15      ; 117        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; Y16      ; 123        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; Y17      ; 125        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y18      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y19      ; 141        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y20      ; 139        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -930,70 +919,31 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+--------------------------------------------------------+
-; I/O Assignment Warnings                                ;
-+------------------------+-------------------------------+
-; Pin Name               ; Reason                        ;
-+------------------------+-------------------------------+
-; vagas_load[0]          ; Incomplete set of assignments ;
-; vagas_load[1]          ; Incomplete set of assignments ;
-; vagas_load[2]          ; Incomplete set of assignments ;
-; vagas_load[3]          ; Incomplete set of assignments ;
-; vagas_out_total[0]     ; Incomplete set of assignments ;
-; vagas_out_total[1]     ; Incomplete set of assignments ;
-; vagas_out_total[2]     ; Incomplete set of assignments ;
-; vagas_out_total[3]     ; Incomplete set of assignments ;
-; vagas_out_idosos[0]    ; Incomplete set of assignments ;
-; vagas_out_idosos[1]    ; Incomplete set of assignments ;
-; vagas_out_idosos[2]    ; Incomplete set of assignments ;
-; vagas_out_idosos[3]    ; Incomplete set of assignments ;
-; cheio                  ; Incomplete set of assignments ;
-; entra_sai_idosos_sm_dp ; Incomplete set of assignments ;
-; entra_sai_normal_sm_dp ; Incomplete set of assignments ;
-; conta_idosos_sm_dp     ; Incomplete set of assignments ;
-; conta_normal_sm_dp     ; Incomplete set of assignments ;
-; clear_sm_dp            ; Incomplete set of assignments ;
-; cheio_dp_sm            ; Incomplete set of assignments ;
-; vagas_total[1]         ; Incomplete set of assignments ;
-; vagas_total[0]         ; Incomplete set of assignments ;
-; vagas_total[3]         ; Incomplete set of assignments ;
-; vagas_total[2]         ; Incomplete set of assignments ;
-; entra_sai_idosos       ; Incomplete set of assignments ;
-; entra_sai_normal       ; Incomplete set of assignments ;
-; clock                  ; Incomplete set of assignments ;
-; clear                  ; Incomplete set of assignments ;
-; conta_normal           ; Incomplete set of assignments ;
-; conta_idosos           ; Incomplete set of assignments ;
-; vagas_load[0]          ; Missing location assignment   ;
-; vagas_load[1]          ; Missing location assignment   ;
-; vagas_load[2]          ; Missing location assignment   ;
-; vagas_load[3]          ; Missing location assignment   ;
-; vagas_out_total[0]     ; Missing location assignment   ;
-; vagas_out_total[1]     ; Missing location assignment   ;
-; vagas_out_total[2]     ; Missing location assignment   ;
-; vagas_out_total[3]     ; Missing location assignment   ;
-; vagas_out_idosos[0]    ; Missing location assignment   ;
-; vagas_out_idosos[1]    ; Missing location assignment   ;
-; vagas_out_idosos[2]    ; Missing location assignment   ;
-; vagas_out_idosos[3]    ; Missing location assignment   ;
-; cheio                  ; Missing location assignment   ;
-; entra_sai_idosos_sm_dp ; Missing location assignment   ;
-; entra_sai_normal_sm_dp ; Missing location assignment   ;
-; conta_idosos_sm_dp     ; Missing location assignment   ;
-; conta_normal_sm_dp     ; Missing location assignment   ;
-; clear_sm_dp            ; Missing location assignment   ;
-; cheio_dp_sm            ; Missing location assignment   ;
-; vagas_total[1]         ; Missing location assignment   ;
-; vagas_total[0]         ; Missing location assignment   ;
-; vagas_total[3]         ; Missing location assignment   ;
-; vagas_total[2]         ; Missing location assignment   ;
-; entra_sai_idosos       ; Missing location assignment   ;
-; entra_sai_normal       ; Missing location assignment   ;
-; clock                  ; Missing location assignment   ;
-; clear                  ; Missing location assignment   ;
-; conta_normal           ; Missing location assignment   ;
-; conta_idosos           ; Missing location assignment   ;
-+------------------------+-------------------------------+
++-----------------------------------------------------+
+; I/O Assignment Warnings                             ;
++---------------------+-------------------------------+
+; Pin Name            ; Reason                        ;
++---------------------+-------------------------------+
+; vagas_out_total[0]  ; Incomplete set of assignments ;
+; vagas_out_total[1]  ; Incomplete set of assignments ;
+; vagas_out_total[2]  ; Incomplete set of assignments ;
+; vagas_out_total[3]  ; Incomplete set of assignments ;
+; vagas_out_idosos[0] ; Incomplete set of assignments ;
+; vagas_out_idosos[1] ; Incomplete set of assignments ;
+; vagas_out_idosos[2] ; Incomplete set of assignments ;
+; vagas_out_idosos[3] ; Incomplete set of assignments ;
+; cheio               ; Incomplete set of assignments ;
+; vagas_total[1]      ; Incomplete set of assignments ;
+; vagas_total[0]      ; Incomplete set of assignments ;
+; vagas_total[3]      ; Incomplete set of assignments ;
+; vagas_total[2]      ; Incomplete set of assignments ;
+; clock               ; Incomplete set of assignments ;
+; clear               ; Incomplete set of assignments ;
+; entra_sai_idosos    ; Incomplete set of assignments ;
+; entra_sai_normal    ; Incomplete set of assignments ;
+; conta_idosos        ; Incomplete set of assignments ;
+; conta_normal        ; Incomplete set of assignments ;
++---------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1001,117 +951,100 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node  ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Entity Name          ; Library Name ;
 +-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------+----------------------+--------------+
-; |controlador_de_vagas       ; 14.0 (0.5)           ; 15.0 (0.5)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (1)              ; 14 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 29   ; 0            ; |controlador_de_vagas                                       ; controlador_de_vagas ; work         ;
-;    |fluxo_de_dados:FD|      ; 6.5 (0.5)            ; 7.4 (0.5)                        ; 0.9 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (1)              ; 9 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD                     ; fluxo_de_dados       ; work         ;
-;       |comparador:comp1|    ; 1.8 (1.8)            ; 2.0 (2.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD|comparador:comp1    ; comparador           ; work         ;
+; |controlador_de_vagas       ; 13.5 (0.5)           ; 14.5 (0.5)                       ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 25 (1)              ; 13 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 19   ; 0            ; |controlador_de_vagas                                       ; controlador_de_vagas ; work         ;
+;    |fluxo_de_dados:FD|      ; 6.5 (0.3)            ; 7.3 (0.3)                        ; 0.8 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (1)              ; 8 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD                     ; fluxo_de_dados       ; work         ;
+;       |comparador:comp1|    ; 1.4 (1.4)            ; 2.0 (2.0)                        ; 0.6 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD|comparador:comp1    ; comparador           ; work         ;
 ;       |up_down:cont_idosos| ; 2.0 (2.0)            ; 2.5 (2.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD|up_down:cont_idosos ; up_down              ; work         ;
-;       |up_down:cont_total|  ; 2.3 (2.3)            ; 2.4 (2.4)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 5 (5)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD|up_down:cont_total  ; up_down              ; work         ;
-;    |unidade_de_controle:UC| ; 7.0 (7.0)            ; 7.1 (7.1)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 12 (12)             ; 5 (5)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |controlador_de_vagas|unidade_de_controle:UC                ; unidade_de_controle  ; work         ;
+;       |up_down:cont_total|  ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD|up_down:cont_total  ; up_down              ; work         ;
+;    |unidade_de_controle:UC| ; 6.5 (6.5)            ; 6.7 (6.7)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (11)             ; 5 (5)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |controlador_de_vagas|unidade_de_controle:UC                ; unidade_de_controle  ; work         ;
 +-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                                                                   ;
-+------------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
-; Name                   ; Pin Type ; D1 ; D3_0 ; D3_1 ; D4 ; D5   ; D5 OE ; D5 OCT ; T11 (Postamble Gating) ; T11 (Postamble Ungating) ;
-+------------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
-; vagas_load[0]          ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; vagas_load[1]          ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; vagas_load[2]          ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; vagas_load[3]          ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; vagas_out_total[0]     ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; vagas_out_total[1]     ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; vagas_out_total[2]     ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; vagas_out_total[3]     ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; vagas_out_idosos[0]    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; vagas_out_idosos[1]    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; vagas_out_idosos[2]    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; vagas_out_idosos[3]    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; cheio                  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; entra_sai_idosos_sm_dp ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; entra_sai_normal_sm_dp ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; conta_idosos_sm_dp     ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; conta_normal_sm_dp     ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; clear_sm_dp            ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; cheio_dp_sm            ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; vagas_total[1]         ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; vagas_total[0]         ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; vagas_total[3]         ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; vagas_total[2]         ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; entra_sai_idosos       ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; entra_sai_normal       ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; clock                  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; clear                  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; conta_normal           ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; conta_idosos           ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-+------------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                ;
++---------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
+; Name                ; Pin Type ; D1 ; D3_0 ; D3_1 ; D4 ; D5   ; D5 OE ; D5 OCT ; T11 (Postamble Gating) ; T11 (Postamble Ungating) ;
++---------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
+; vagas_out_total[0]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; vagas_out_total[1]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; vagas_out_total[2]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; vagas_out_total[3]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; vagas_out_idosos[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; vagas_out_idosos[1] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; vagas_out_idosos[2] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; vagas_out_idosos[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; cheio               ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; vagas_total[1]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; vagas_total[0]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; vagas_total[3]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; vagas_total[2]      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; clock               ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; clear               ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; entra_sai_idosos    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; entra_sai_normal    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; conta_idosos        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; conta_normal        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
++---------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                            ;
-+-------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                         ; Pad To Core Index ; Setting ;
-+-------------------------------------------------------------+-------------------+---------+
-; vagas_load[0]                                               ;                   ;         ;
-; vagas_load[1]                                               ;                   ;         ;
-; vagas_load[2]                                               ;                   ;         ;
-; vagas_load[3]                                               ;                   ;         ;
-; vagas_total[1]                                              ;                   ;         ;
-;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~0     ; 0                 ; 0       ;
-; vagas_total[0]                                              ;                   ;         ;
-;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~0     ; 1                 ; 0       ;
-; vagas_total[3]                                              ;                   ;         ;
-;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~1     ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~2     ; 0                 ; 0       ;
-; vagas_total[2]                                              ;                   ;         ;
-;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~1     ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~2     ; 0                 ; 0       ;
-; entra_sai_idosos                                            ;                   ;         ;
-;      - unidade_de_controle:UC|Selector1~0                   ; 1                 ; 0       ;
-;      - fluxo_de_dados:FD|entra_sai_total_s                  ; 1                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ~0           ; 1                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ~1           ; 1                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ~2           ; 1                 ; 0       ;
-;      - unidade_de_controle:UC|Selector4~0                   ; 1                 ; 0       ;
-;      - unidade_de_controle:UC|Selector3~0                   ; 1                 ; 0       ;
-;      - unidade_de_controle:UC|Selector5~0                   ; 1                 ; 0       ;
-;      - entra_sai_idosos_sm_dp~output                        ; 1                 ; 0       ;
-; entra_sai_normal                                            ;                   ;         ;
-;      - unidade_de_controle:UC|Selector1~0                   ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|entra_sai_total_s                  ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|Selector4~0                   ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|Selector5~0                   ; 0                 ; 0       ;
-; clock                                                       ;                   ;         ;
-; clear                                                       ;                   ;         ;
-;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ[0]          ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ[1]          ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ[2]          ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ[3]          ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_total|IQ[0]           ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_total|IQ[1]           ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_total|IQ[2]           ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_total|IQ[3]           ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|CurrentState.zera_vagas       ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|CurrentState.inc_idosos       ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|CurrentState.inc_normal       ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|CurrentState.vazio            ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|CurrentState.cheio            ; 0                 ; 0       ;
-;      - fluxo_de_dados:FD|up_down:cont_total|IQ[0]~DUPLICATE ; 0                 ; 0       ;
-; conta_normal                                                ;                   ;         ;
-;      - unidade_de_controle:UC|Selector4~0                   ; 1                 ; 0       ;
-;      - unidade_de_controle:UC|Selector4~1                   ; 1                 ; 0       ;
-;      - unidade_de_controle:UC|Selector2~0                   ; 1                 ; 0       ;
-;      - unidade_de_controle:UC|Selector2~1                   ; 1                 ; 0       ;
-;      - unidade_de_controle:UC|Selector5~0                   ; 1                 ; 0       ;
-; conta_idosos                                                ;                   ;         ;
-;      - unidade_de_controle:UC|Selector4~0                   ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|Selector3~0                   ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|Selector3~1                   ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|Selector2~0                   ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|Selector2~1                   ; 0                 ; 0       ;
-;      - unidade_de_controle:UC|Selector5~0                   ; 0                 ; 0       ;
-+-------------------------------------------------------------+-------------------+---------+
++---------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                        ;
++---------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                     ; Pad To Core Index ; Setting ;
++---------------------------------------------------------+-------------------+---------+
+; vagas_total[1]                                          ;                   ;         ;
+;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~0 ; 0                 ; 0       ;
+; vagas_total[0]                                          ;                   ;         ;
+;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~0 ; 0                 ; 0       ;
+; vagas_total[3]                                          ;                   ;         ;
+;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~1 ; 0                 ; 0       ;
+;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~2 ; 0                 ; 0       ;
+; vagas_total[2]                                          ;                   ;         ;
+;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~1 ; 0                 ; 0       ;
+;      - fluxo_de_dados:FD|comparador:comp1|maior_igual~2 ; 0                 ; 0       ;
+; clock                                                   ;                   ;         ;
+;      - clock~inputCLKENA0                               ; 1                 ; 0       ;
+; clear                                                   ;                   ;         ;
+;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ[0]      ; 0                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ[1]      ; 0                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ[2]      ; 0                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ[3]      ; 0                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_total|IQ[0]       ; 0                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_total|IQ[1]       ; 0                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_total|IQ[2]       ; 0                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_total|IQ[3]       ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|CurrentState.inc_idosos   ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|CurrentState.inc_normal   ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|CurrentState.cheio        ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|CurrentState.vazio        ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|CurrentState.zera_vagas   ; 0                 ; 0       ;
+; entra_sai_idosos                                        ;                   ;         ;
+;      - fluxo_de_dados:FD|entra_sai_total_s~0            ; 1                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ~0       ; 1                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ~1       ; 1                 ; 0       ;
+;      - fluxo_de_dados:FD|up_down:cont_idosos|IQ~2       ; 1                 ; 0       ;
+;      - unidade_de_controle:UC|Selector3~0               ; 1                 ; 0       ;
+;      - unidade_de_controle:UC|Selector4~0               ; 1                 ; 0       ;
+;      - unidade_de_controle:UC|Selector5~0               ; 1                 ; 0       ;
+; entra_sai_normal                                        ;                   ;         ;
+;      - fluxo_de_dados:FD|entra_sai_total_s~0            ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|Selector4~0               ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|Selector5~0               ; 0                 ; 0       ;
+; conta_idosos                                            ;                   ;         ;
+;      - unidade_de_controle:UC|Selector3~0               ; 1                 ; 0       ;
+;      - unidade_de_controle:UC|Selector3~1               ; 1                 ; 0       ;
+;      - unidade_de_controle:UC|Selector4~0               ; 1                 ; 0       ;
+;      - unidade_de_controle:UC|Selector5~0               ; 1                 ; 0       ;
+;      - unidade_de_controle:UC|Selector2~0               ; 1                 ; 0       ;
+;      - unidade_de_controle:UC|Selector2~1               ; 1                 ; 0       ;
+; conta_normal                                            ;                   ;         ;
+;      - unidade_de_controle:UC|Selector4~0               ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|Selector4~1               ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|Selector5~0               ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|Selector2~0               ; 0                 ; 0       ;
+;      - unidade_de_controle:UC|Selector2~1               ; 0                 ; 0       ;
++---------------------------------------------------------+-------------------+---------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1119,10 +1052,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                           ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clear                                          ; PIN_AA13           ; 14      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; clock                                          ; PIN_M16            ; 14      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; unidade_de_controle:UC|CurrentState.inc_idosos ; FF_X36_Y1_N44      ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; unidade_de_controle:UC|NextState~0             ; LABCELL_X36_Y1_N21 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; clear                                          ; PIN_U7             ; 13      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; clock                                          ; PIN_A12            ; 13      ; Clock        ; yes    ; Global Clock         ; GCLK13           ; --                        ;
+; unidade_de_controle:UC|CurrentState.inc_idosos ; FF_X25_Y4_N8       ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; unidade_de_controle:UC|NextState~0             ; LABCELL_X25_Y4_N54 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1131,7 +1064,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------+----------------------+------------------+---------------------------+
 ; Name  ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
-; clock ; PIN_M16  ; 14      ; Global Clock         ; GCLK10           ; --                        ;
+; clock ; PIN_A12  ; 13      ; Global Clock         ; GCLK13           ; --                        ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1140,21 +1073,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+------------------------+
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
-; Block interconnects          ; 41 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 0 / 6,048 ( 0 % )      ;
-; C2 interconnects             ; 19 / 54,648 ( < 1 % )  ;
-; C4 interconnects             ; 6 / 25,920 ( < 1 % )   ;
+; Block interconnects          ; 44 / 140,056 ( < 1 % ) ;
+; C12 interconnects            ; 4 / 6,048 ( < 1 % )    ;
+; C2 interconnects             ; 3 / 54,648 ( < 1 % )   ;
+; C4 interconnects             ; 37 / 25,920 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
-; Direct links                 ; 8 / 140,056 ( < 1 % )  ;
+; Direct links                 ; 9 / 140,056 ( < 1 % )  ;
 ; Global clocks                ; 1 / 16 ( 6 % )         ;
-; Local interconnects          ; 17 / 36,960 ( < 1 % )  ;
+; Local interconnects          ; 16 / 36,960 ( < 1 % )  ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 2 / 5,984 ( < 1 % )    ;
-; R14/C12 interconnect drivers ; 2 / 9,504 ( < 1 % )    ;
-; R3 interconnects             ; 25 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 10 / 127,072 ( < 1 % ) ;
+; R14 interconnects            ; 6 / 5,984 ( < 1 % )    ;
+; R14/C12 interconnect drivers ; 8 / 9,504 ( < 1 % )    ;
+; R3 interconnects             ; 27 / 60,192 ( < 1 % )  ;
+; R6 interconnects             ; 55 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 1 / 120 ( < 1 % )      ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1166,10 +1099,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; I/O Rules Statistic              ; Total ;
 +----------------------------------+-------+
 ; Total I/O Rules                  ; 28    ;
-; Number of I/O Rules Passed       ; 6     ;
+; Number of I/O Rules Passed       ; 9     ;
 ; Number of I/O Rules Failed       ; 0     ;
 ; Number of I/O Rules Unchecked    ; 0     ;
-; Number of I/O Rules Inapplicable ; 22    ;
+; Number of I/O Rules Inapplicable ; 19    ;
 +----------------------------------+-------+
 
 
@@ -1178,13 +1111,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 ; Status       ; ID        ; Category                          ; Rule Description                                                                   ; Severity ; Information                                                              ; Area                ; Extra Information ;
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
-; Inapplicable ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available. ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available. ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.  ; Critical ; No Global Signal assignments found.                                      ; I/O                 ;                   ;
-; Inapplicable ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available. ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available. ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000004 ; Voltage Compatibility Checks      ; The I/O bank should support the requested VCCIO.                                   ; Critical ; No IOBANK_VCCIO assignments found.                                       ; I/O                 ;                   ;
 ; Inapplicable ; IO_000005 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VREF values.                                ; Critical ; No VREF I/O Standard assignments found.                                  ; I/O                 ;                   ;
 ; Pass         ; IO_000006 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VCCIO values.                               ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                  ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                  ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000008 ; Valid Location Checks             ; Checks for reserved locations.                                                     ; Critical ; No reserved LogicLock region found.                                      ; I/O                 ;                   ;
 ; Pass         ; IO_000009 ; I/O Properties Checks for One I/O ; The location should support the requested I/O standard.                            ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Pass         ; IO_000010 ; I/O Properties Checks for One I/O ; The location should support the requested I/O direction.                           ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
@@ -1210,45 +1143,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
-+------------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Pin/Rules              ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
-+------------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass             ; 0            ; 0            ; 0            ; 0            ; 0            ; 29        ; 0            ; 0            ; 29        ; 29        ; 0            ; 15           ; 0            ; 0            ; 0            ; 0            ; 15           ; 0            ; 0            ; 0            ; 0            ; 15           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Unchecked        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable     ; 29           ; 29           ; 29           ; 29           ; 29           ; 0         ; 29           ; 29           ; 0         ; 0         ; 29           ; 14           ; 29           ; 29           ; 29           ; 29           ; 14           ; 29           ; 29           ; 29           ; 29           ; 14           ; 29           ; 29           ; 29           ; 29           ; 29           ; 29           ;
-; Total Fail             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; vagas_load[0]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_load[1]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_load[2]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_load[3]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_out_total[0]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_out_total[1]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_out_total[2]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_out_total[3]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_out_idosos[0]    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_out_idosos[1]    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_out_idosos[2]    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_out_idosos[3]    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; cheio                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; entra_sai_idosos_sm_dp ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; entra_sai_normal_sm_dp ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; conta_idosos_sm_dp     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; conta_normal_sm_dp     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; clear_sm_dp            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; cheio_dp_sm            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_total[1]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_total[0]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_total[3]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; vagas_total[2]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; entra_sai_idosos       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; entra_sai_normal       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; clock                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; clear                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; conta_normal           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; conta_idosos           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-+------------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                      ;
++---------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Pin/Rules           ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
++---------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Total Pass          ; 19        ; 0            ; 19        ; 0            ; 0            ; 19        ; 19        ; 0            ; 19        ; 19        ; 0            ; 9            ; 0            ; 0            ; 0            ; 0            ; 9            ; 0            ; 0            ; 0            ; 0            ; 9            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Unchecked     ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Inapplicable  ; 0         ; 19           ; 0         ; 19           ; 19           ; 0         ; 0         ; 19           ; 0         ; 0         ; 19           ; 10           ; 19           ; 19           ; 19           ; 19           ; 10           ; 19           ; 19           ; 19           ; 19           ; 10           ; 19           ; 19           ; 19           ; 19           ; 19           ; 19           ;
+; Total Fail          ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; vagas_out_total[0]  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_out_total[1]  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_out_total[2]  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_out_total[3]  ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_out_idosos[0] ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_out_idosos[1] ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_out_idosos[2] ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_out_idosos[3] ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; cheio               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_total[1]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_total[0]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_total[3]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; vagas_total[2]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; clock               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; clear               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; entra_sai_idosos    ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; entra_sai_normal    ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; conta_idosos        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; conta_normal        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
++---------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------+
@@ -1299,10 +1222,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clock           ; clock                ; 7.4               ;
+; clock           ; clock                ; 7.6               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -1310,21 +1233,21 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------------------------+---------------------------------------------+-------------------+
 ; Source Register                                ; Destination Register                        ; Delay Added in ns ;
 +------------------------------------------------+---------------------------------------------+-------------------+
-; fluxo_de_dados:FD|up_down:cont_idosos|IQ[2]    ; fluxo_de_dados:FD|up_down:cont_idosos|IQ[3] ; 0.667             ;
-; fluxo_de_dados:FD|up_down:cont_total|IQ[2]     ; fluxo_de_dados:FD|up_down:cont_total|IQ[3]  ; 0.599             ;
-; fluxo_de_dados:FD|up_down:cont_idosos|IQ[0]    ; fluxo_de_dados:FD|up_down:cont_idosos|IQ[3] ; 0.586             ;
-; fluxo_de_dados:FD|up_down:cont_total|IQ[0]     ; fluxo_de_dados:FD|up_down:cont_total|IQ[3]  ; 0.579             ;
-; fluxo_de_dados:FD|up_down:cont_idosos|IQ[1]    ; fluxo_de_dados:FD|up_down:cont_idosos|IQ[3] ; 0.553             ;
-; fluxo_de_dados:FD|up_down:cont_total|IQ[1]     ; fluxo_de_dados:FD|up_down:cont_total|IQ[3]  ; 0.550             ;
-; unidade_de_controle:UC|CurrentState.inc_normal ; unidade_de_controle:UC|CurrentState.vazio   ; 0.207             ;
-; unidade_de_controle:UC|CurrentState.inc_idosos ; unidade_de_controle:UC|CurrentState.vazio   ; 0.189             ;
-; conta_normal                                   ; unidade_de_controle:UC|CurrentState.vazio   ; 0.104             ;
-; conta_idosos                                   ; unidade_de_controle:UC|CurrentState.vazio   ; 0.104             ;
-; unidade_de_controle:UC|CurrentState.zera_vagas ; unidade_de_controle:UC|CurrentState.vazio   ; 0.076             ;
-; unidade_de_controle:UC|CurrentState.cheio      ; unidade_de_controle:UC|CurrentState.cheio   ; 0.046             ;
-; unidade_de_controle:UC|CurrentState.vazio      ; unidade_de_controle:UC|CurrentState.vazio   ; 0.038             ;
-; entra_sai_idosos                               ; unidade_de_controle:UC|CurrentState.cheio   ; 0.023             ;
-; entra_sai_normal                               ; unidade_de_controle:UC|CurrentState.cheio   ; 0.023             ;
+; fluxo_de_dados:FD|up_down:cont_idosos|IQ[2]    ; fluxo_de_dados:FD|up_down:cont_idosos|IQ[3] ; 0.653             ;
+; fluxo_de_dados:FD|up_down:cont_total|IQ[2]     ; fluxo_de_dados:FD|up_down:cont_total|IQ[3]  ; 0.617             ;
+; fluxo_de_dados:FD|up_down:cont_idosos|IQ[0]    ; fluxo_de_dados:FD|up_down:cont_idosos|IQ[3] ; 0.601             ;
+; fluxo_de_dados:FD|up_down:cont_total|IQ[0]     ; fluxo_de_dados:FD|up_down:cont_total|IQ[3]  ; 0.591             ;
+; fluxo_de_dados:FD|up_down:cont_idosos|IQ[1]    ; fluxo_de_dados:FD|up_down:cont_idosos|IQ[3] ; 0.569             ;
+; fluxo_de_dados:FD|up_down:cont_total|IQ[1]     ; fluxo_de_dados:FD|up_down:cont_total|IQ[3]  ; 0.565             ;
+; unidade_de_controle:UC|CurrentState.inc_idosos ; unidade_de_controle:UC|CurrentState.cheio   ; 0.187             ;
+; unidade_de_controle:UC|CurrentState.inc_normal ; unidade_de_controle:UC|CurrentState.cheio   ; 0.172             ;
+; unidade_de_controle:UC|CurrentState.cheio      ; unidade_de_controle:UC|CurrentState.cheio   ; 0.105             ;
+; unidade_de_controle:UC|CurrentState.vazio      ; unidade_de_controle:UC|CurrentState.vazio   ; 0.085             ;
+; conta_idosos                                   ; unidade_de_controle:UC|CurrentState.vazio   ; 0.082             ;
+; conta_normal                                   ; unidade_de_controle:UC|CurrentState.vazio   ; 0.082             ;
+; entra_sai_idosos                               ; unidade_de_controle:UC|CurrentState.cheio   ; 0.053             ;
+; entra_sai_normal                               ; unidade_de_controle:UC|CurrentState.cheio   ; 0.053             ;
+; unidade_de_controle:UC|CurrentState.zera_vagas ; unidade_de_controle:UC|CurrentState.vazio   ; 0.024             ;
 +------------------------------------------------+---------------------------------------------+-------------------+
 Note: This table only shows the top 15 path(s) that have the largest delay added for hold.
 
@@ -1340,49 +1263,52 @@ Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 29 pins of 29 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): clock~inputCLKENA0 with 13 fanout uses global clock CLKCTRL_G10
+    Info (11162): clock~inputCLKENA0 with 13 fanout uses global clock CLKCTRL_G13
+        Info (12525): This signal is driven by core routing -- it may be moved during placement to reduce routing delays
+Warning (16406): 1 global input pin(s) will use non-dedicated clock routing
+    Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver clock~inputCLKENA0, placed at CLKCTRL_G13
+        Info (179012): Refclk input I/O pad clock is placed onto PIN_A12
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'controlador_de_vagas.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'controlador_de_vagas.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:21
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X22_Y0 to location X32_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 0.87 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.27 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:10
-Info (144001): Generated suppressed messages file C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/output_files/controlador_de_vagas.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 2092 megabytes
-    Info: Processing ended: Sun May 29 21:35:28 2022
-    Info: Elapsed time: 00:01:10
-    Info: Total CPU time (on all processors): 00:01:52
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (144001): Generated suppressed messages file C:/Users/Operador/Documents/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/output_files/controlador_de_vagas.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 6205 megabytes
+    Info: Processing ended: Mon May 30 15:46:13 2022
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:34
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/output_files/controlador_de_vagas.fit.smsg.
+The suppressed messages can be found in C:/Users/Operador/Documents/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/output_files/controlador_de_vagas.fit.smsg.
 
 

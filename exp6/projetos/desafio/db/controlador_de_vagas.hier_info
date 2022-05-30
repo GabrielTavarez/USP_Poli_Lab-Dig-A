@@ -1,0 +1,177 @@
+|controlador_de_vagas
+entra_sai_idosos => unidade_de_controle:UC.entra_sai_idosos
+entra_sai_normal => unidade_de_controle:UC.entra_sai_normal
+conta_idosos => unidade_de_controle:UC.conta_idosos
+conta_normal => unidade_de_controle:UC.conta_normal
+clock => unidade_de_controle:UC.clock
+clock => fluxo_de_dados:FD.clock
+clear => unidade_de_controle:UC.clear
+clear => fluxo_de_dados:FD.clear
+vagas_total_geral[0] => fluxo_de_dados:FD.vagas_total_geral[0]
+vagas_total_geral[1] => fluxo_de_dados:FD.vagas_total_geral[1]
+vagas_total_geral[2] => fluxo_de_dados:FD.vagas_total_geral[2]
+vagas_total_geral[3] => fluxo_de_dados:FD.vagas_total_geral[3]
+vagas_total_idosos[0] => fluxo_de_dados:FD.vagas_total_idosos[0]
+vagas_total_idosos[1] => fluxo_de_dados:FD.vagas_total_idosos[1]
+vagas_total_idosos[2] => fluxo_de_dados:FD.vagas_total_idosos[2]
+vagas_total_idosos[3] => fluxo_de_dados:FD.vagas_total_idosos[3]
+vagas_ocupadas_normal[0] <= fluxo_de_dados:FD.vagas_ocupadas_normal[0]
+vagas_ocupadas_normal[1] <= fluxo_de_dados:FD.vagas_ocupadas_normal[1]
+vagas_ocupadas_normal[2] <= fluxo_de_dados:FD.vagas_ocupadas_normal[2]
+vagas_ocupadas_normal[3] <= fluxo_de_dados:FD.vagas_ocupadas_normal[3]
+vagas_ocupadas_idosos[0] <= fluxo_de_dados:FD.vagas_ocupadas_idosos[0]
+vagas_ocupadas_idosos[1] <= fluxo_de_dados:FD.vagas_ocupadas_idosos[1]
+vagas_ocupadas_idosos[2] <= fluxo_de_dados:FD.vagas_ocupadas_idosos[2]
+vagas_ocupadas_idosos[3] <= fluxo_de_dados:FD.vagas_ocupadas_idosos[3]
+cheio_geral <= fluxo_de_dados:FD.cheio_geral
+entra_sai_idosos_sm_dp <= unidade_de_controle:UC.entra_sai_idosos_sm_dp
+entra_sai_normal_sm_dp <= unidade_de_controle:UC.entra_sai_normal_sm_dp
+conta_idosos_sm_dp <= unidade_de_controle:UC.conta_idosos_sm_dp
+conta_normal_sm_dp <= unidade_de_controle:UC.conta_normal_sm_dp
+clear_sm_dp <= unidade_de_controle:UC.clear_sm_dp
+cheio_normal_dp_sm <= fluxo_de_dados:FD.cheio_normal
+cheio_idosos_dp_sm <= fluxo_de_dados:FD.cheio_idosos
+
+
+|controlador_de_vagas|unidade_de_controle:UC
+entra_sai_idosos => update_next_state.IN0
+entra_sai_idosos => entra_sai_idosos_sm_dp.DATAIN
+entra_sai_normal => update_next_state.IN0
+entra_sai_normal => entra_sai_normal_sm_dp.DATAIN
+conta_idosos => update_next_state.IN1
+conta_normal => update_next_state.IN1
+clock => CurrentState~1.DATAIN
+clear => CurrentState~3.DATAIN
+cheio_idosos => update_next_state.IN1
+cheio_idosos => NextState.OUTPUTSELECT
+cheio_idosos => NextState.OUTPUTSELECT
+cheio_normal => update_next_state.IN1
+cheio_normal => NextState.OUTPUTSELECT
+cheio_normal => NextState.OUTPUTSELECT
+entra_sai_idosos_sm_dp <= entra_sai_idosos.DB_MAX_OUTPUT_PORT_TYPE
+entra_sai_normal_sm_dp <= entra_sai_normal.DB_MAX_OUTPUT_PORT_TYPE
+conta_idosos_sm_dp <= conta_idosos_sm_dp.DB_MAX_OUTPUT_PORT_TYPE
+conta_normal_sm_dp <= conta_normal_sm_dp.DB_MAX_OUTPUT_PORT_TYPE
+clear_sm_dp <= clear_sm_dp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controlador_de_vagas|fluxo_de_dados:FD
+clock => up_down:cont_idosos.clock
+clock => up_down:cont_normal.clock
+clear => up_down:cont_idosos.zera
+clear => up_down:cont_normal.zera
+conta_idosos => up_down:cont_idosos.conta
+conta_normal => up_down:cont_normal.conta
+entra_sai_normal => up_down:cont_normal.entra_sai
+entra_sai_idosos => up_down:cont_idosos.entra_sai
+vagas_total_geral[0] => Add0.IN8
+vagas_total_geral[1] => Add0.IN7
+vagas_total_geral[2] => Add0.IN6
+vagas_total_geral[3] => Add0.IN5
+vagas_total_idosos[0] => comparador:comp_idosos.B[0]
+vagas_total_idosos[0] => Add0.IN4
+vagas_total_idosos[1] => comparador:comp_idosos.B[1]
+vagas_total_idosos[1] => Add0.IN3
+vagas_total_idosos[2] => comparador:comp_idosos.B[2]
+vagas_total_idosos[2] => Add0.IN2
+vagas_total_idosos[3] => comparador:comp_idosos.B[3]
+vagas_total_idosos[3] => Add0.IN1
+vagas_ocupadas_normal[0] <= up_down:cont_normal.contagem[0]
+vagas_ocupadas_normal[1] <= up_down:cont_normal.contagem[1]
+vagas_ocupadas_normal[2] <= up_down:cont_normal.contagem[2]
+vagas_ocupadas_normal[3] <= up_down:cont_normal.contagem[3]
+vagas_ocupadas_idosos[0] <= up_down:cont_idosos.contagem[0]
+vagas_ocupadas_idosos[1] <= up_down:cont_idosos.contagem[1]
+vagas_ocupadas_idosos[2] <= up_down:cont_idosos.contagem[2]
+vagas_ocupadas_idosos[3] <= up_down:cont_idosos.contagem[3]
+cheio_idosos <= comparador:comp_idosos.maior_igual
+cheio_normal <= comparador:comp_normal.maior_igual
+cheio_geral <= cheio_geral.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controlador_de_vagas|fluxo_de_dados:FD|up_down:cont_idosos
+clock => IQ[0].CLK
+clock => IQ[1].CLK
+clock => IQ[2].CLK
+clock => IQ[3].CLK
+zera => IQ[0].ACLR
+zera => IQ[1].ACLR
+zera => IQ[2].ACLR
+zera => IQ[3].ACLR
+conta => IQ[0].ENA
+conta => IQ[3].ENA
+conta => IQ[2].ENA
+conta => IQ[1].ENA
+entra_sai => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+contagem[0] <= IQ[0].DB_MAX_OUTPUT_PORT_TYPE
+contagem[1] <= IQ[1].DB_MAX_OUTPUT_PORT_TYPE
+contagem[2] <= IQ[2].DB_MAX_OUTPUT_PORT_TYPE
+contagem[3] <= IQ[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controlador_de_vagas|fluxo_de_dados:FD|up_down:cont_normal
+clock => IQ[0].CLK
+clock => IQ[1].CLK
+clock => IQ[2].CLK
+clock => IQ[3].CLK
+zera => IQ[0].ACLR
+zera => IQ[1].ACLR
+zera => IQ[2].ACLR
+zera => IQ[3].ACLR
+conta => IQ[0].ENA
+conta => IQ[3].ENA
+conta => IQ[2].ENA
+conta => IQ[1].ENA
+entra_sai => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+entra_sai => IQ.OUTPUTSELECT
+contagem[0] <= IQ[0].DB_MAX_OUTPUT_PORT_TYPE
+contagem[1] <= IQ[1].DB_MAX_OUTPUT_PORT_TYPE
+contagem[2] <= IQ[2].DB_MAX_OUTPUT_PORT_TYPE
+contagem[3] <= IQ[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controlador_de_vagas|fluxo_de_dados:FD|comparador:comp_idosos
+A[0] => Equal0.IN3
+A[0] => LessThan0.IN4
+A[1] => Equal0.IN2
+A[1] => LessThan0.IN3
+A[2] => Equal0.IN1
+A[2] => LessThan0.IN2
+A[3] => Equal0.IN0
+A[3] => LessThan0.IN1
+B[0] => Equal0.IN7
+B[0] => LessThan0.IN8
+B[1] => Equal0.IN6
+B[1] => LessThan0.IN7
+B[2] => Equal0.IN5
+B[2] => LessThan0.IN6
+B[3] => Equal0.IN4
+B[3] => LessThan0.IN5
+maior_igual <= maior_igual.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controlador_de_vagas|fluxo_de_dados:FD|comparador:comp_normal
+A[0] => Equal0.IN3
+A[0] => LessThan0.IN4
+A[1] => Equal0.IN2
+A[1] => LessThan0.IN3
+A[2] => Equal0.IN1
+A[2] => LessThan0.IN2
+A[3] => Equal0.IN0
+A[3] => LessThan0.IN1
+B[0] => Equal0.IN7
+B[0] => LessThan0.IN8
+B[1] => Equal0.IN6
+B[1] => LessThan0.IN7
+B[2] => Equal0.IN5
+B[2] => LessThan0.IN6
+B[3] => Equal0.IN4
+B[3] => LessThan0.IN5
+maior_igual <= maior_igual.DB_MAX_OUTPUT_PORT_TYPE
+
+

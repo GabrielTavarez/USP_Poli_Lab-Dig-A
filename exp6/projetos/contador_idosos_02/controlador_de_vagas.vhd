@@ -7,10 +7,10 @@ entity controlador_de_vagas is
     port(
         entra_sai_idosos, entra_sai_normal, conta_idosos, conta_normal : in  std_logic;
         clock, clear : in  std_logic;
-        vagas_total, vagas_load: in std_logic_vector (3 downto 0);
+        vagas_total: in std_logic_vector (3 downto 0);
         vagas_out_total, vagas_out_idosos : out std_logic_vector (3 downto 0);
-        cheio: out std_logic;
-		  entra_sai_idosos_sm_dp, entra_sai_normal_sm_dp, conta_idosos_sm_dp, conta_normal_sm_dp, clear_sm_dp, cheio_dp_sm: out std_logic
+        cheio: out std_logic
+		  --entra_sai_idosos_sm_dp, entra_sai_normal_sm_dp, conta_idosos_sm_dp, conta_normal_sm_dp, clear_sm_dp, cheio_dp_sm: out std_logic
 		  
     );
 end controlador_de_vagas;
@@ -39,17 +39,19 @@ architecture arch of controlador_de_vagas is
     end component;
 
     signal entra_sai_idosos_sm_dp_s, entra_sai_normal_sm_dp_s, conta_idosos_sm_dp_s, conta_normal_sm_dp_s, clear_sm_dp_s, cheio_dp_sm_s : std_logic;
-    
+    signal nclear_s: std_logic;
     
 begin  
     
+	 nclear_s <= NOT(clear);
+	 
     UC: unidade_de_controle port map(
         entra_sai_idosos => entra_sai_idosos,
         entra_sai_normal => entra_sai_normal, 
         conta_idosos => conta_idosos, 
         conta_normal => conta_normal,
         clock => clock, 
-        clear => clear,
+        clear => nclear_s,
         cheio_dp_sm => cheio_dp_sm_s,
         entra_sai_idosos_sm_dp => entra_sai_idosos_sm_dp_s, 
         entra_sai_normal_sm_dp => entra_sai_normal_sm_dp_s, 
@@ -60,26 +62,26 @@ begin
 
     FD: fluxo_De_dados port map(
         clock => NOT(clock),
-        clear => clear,
+        clear => nclear_s,
         conta_idosos => conta_idosos_sm_dp_s,
         conta_normal => conta_normal_sm_dp_s,
         entra_sai_normal => entra_sai_normal_sm_dp_s,
         entra_sai_idosos => entra_sai_idosos_sm_dp_s,
         load => '0',
         vagas_total => vagas_total,
-        vagas_load => vagas_load,
+        vagas_load => "0000",
         vagas_out_total => vagas_out_total,
         vagas_out_idosos => vagas_out_idosos,
         cheio_dp_sm => cheio_dp_sm_s,
         cheio  => cheio
     );
 
-	 entra_sai_idosos_sm_dp <= entra_sai_idosos_sm_dp_s;
-	 entra_sai_normal_sm_dp <= entra_sai_normal_sm_dp_s;
-	 conta_idosos_sm_dp <= conta_idosos_sm_dp_s;
-	 conta_normal_sm_dp <= conta_normal_sm_dp_s;
-	 clear_sm_dp <= clear_sm_dp_s;
-	 cheio_dp_sm <= cheio_dp_sm_s;
+	 --entra_sai_idosos_sm_dp <= entra_sai_idosos_sm_dp_s;
+	 --entra_sai_normal_sm_dp <= entra_sai_normal_sm_dp_s;
+	 --conta_idosos_sm_dp <= conta_idosos_sm_dp_s;
+	 --conta_normal_sm_dp <= conta_normal_sm_dp_s;
+	 --clear_sm_dp <= clear_sm_dp_s;
+	 --cheio_dp_sm <= cheio_dp_sm_s;
     
     
 
