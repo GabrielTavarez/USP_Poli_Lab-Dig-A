@@ -1,5 +1,5 @@
 EDA Netlist Writer report for controlador_vagas
-Sun May 29 12:17:47 2022
+Sun May 29 21:52:40 2022
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun May 29 12:17:47 2022 ;
+; EDA Netlist Writer Status ; Successful - Sun May 29 21:52:40 2022 ;
 ; Revision Name             ; controlador_vagas                     ;
 ; Top-level Entity Name     ; controlador_vagas                     ;
 ; Family                    ; Cyclone V                             ;
@@ -95,15 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Sun May 29 12:17:44 2022
+    Info: Processing started: Sun May 29 21:52:36 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_01/simulation/qsim/ controlador_vagas -c controlador_vagas
-Info (119006): Selected device 5CEBA4F23C7 for design "controlador_vagas"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file controlador_vagas.vho in folder "C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_01/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 575 megabytes
-    Info: Processing ended: Sun May 29 12:17:47 2022
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Sun May 29 21:52:40 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

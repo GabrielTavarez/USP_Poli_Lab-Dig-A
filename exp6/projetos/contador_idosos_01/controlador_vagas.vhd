@@ -39,13 +39,13 @@ signal entra_sai_total_s, conta_total_s, conta_idosos_s, cheio_s : std_logic;
 begin
 
 	 entra_sai_total_s <= entra_sai_idosos OR entra_sai_normal;
-	 conta_total_s <= (conta_idosos OR conta_normal) AND NOT(cheio_s);
-	 conta_idosos_s <= conta_idosos AND NOT(cheio_s);
+	 conta_total_s <= (conta_idosos OR conta_normal) AND (cheio_s NAND entra_sai_total_s);
+	 conta_idosos_s <= conta_idosos AND (cheio_s NAND entra_sai_idosos);
 
     cont_idosos: up_down port map (
        clock    => clock,
        zera     => clear,
-       conta    => conta_idosos, 
+       conta    => conta_idosos_s, 
        carrega  => load,
        entra_sai    => entra_sai_idosos,
        entrada  => vagas_load,

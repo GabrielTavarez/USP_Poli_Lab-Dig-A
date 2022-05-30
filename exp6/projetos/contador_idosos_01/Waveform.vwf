@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -400,8 +402,10 @@ TRANSITION_LIST("conta_idosos")
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -428,7 +432,9 @@ TRANSITION_LIST("entra_sai_idosos")
 		REPEAT = 1;
 		LEVEL 1 FOR 450.0;
 		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 390.0;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -439,7 +445,9 @@ TRANSITION_LIST("entra_sai_normal")
 		REPEAT = 1;
 		LEVEL 1 FOR 450.0;
 		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 390.0;
+		LEVEL 1 FOR 320.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -712,7 +720,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "vagas_total";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 0;

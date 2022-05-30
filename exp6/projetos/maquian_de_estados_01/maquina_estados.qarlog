@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/maquian_de_estados_01/maquina_estados.qarlog
+
+Archive:	C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/maquian_de_estados_01/maquina_estados.qar
+Date:		Sun May 29 21:56:58 2022
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/maquian_de_estados_01/Waveform.vwf
+C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/maquian_de_estados_01/maquina_estados.qpf
+C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/maquian_de_estados_01/maquina_estados.qsf
+C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/maquian_de_estados_01/maquina_estados.vhd
+c:/intelfpga_lite/16.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

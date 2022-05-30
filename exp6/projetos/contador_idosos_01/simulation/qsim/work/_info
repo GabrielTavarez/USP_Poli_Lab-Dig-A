@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_01/simulation/qsim
 Econtrolador_vagas
-Z1 w1653837467
+Z1 w1653871960
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 41KVoNENnj;RUmMIITVQg1
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 MmMkVfW5JWkR?lm<VcfRO1
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
@@ -28,9 +28,9 @@ VLBfJR1L_d3=LS8?S>P=_;3
 !s100 <MS:fG5@DbU?XH:eAD3BU3
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1653837470
+Z14 !s110 1653871963
 !i10b 1
-Z15 !s108 1653837470.000000
+Z15 !s108 1653871962.000000
 Z16 !s90 -work|work|controlador_vagas.vho|
 Z17 !s107 controlador_vagas.vho|
 !i113 1
@@ -47,10 +47,10 @@ R8
 R9
 R10
 DEx4 work 17 controlador_vagas 0 22 LBfJR1L_d3=LS8?S>P=_;3
-l149
-L56
-VVB_6CVnBb:?o]]l8]zK:T2
-!s100 JX:U2Z@Fm60F?1<XN[YQb2
+l168
+L83
+VVoF?E@UOmU8oG0kDlGR`P1
+!s100 glhzjFX8Z3fM1l^k@B<7R0
 R13
 32
 R14
@@ -62,7 +62,7 @@ R17
 R18
 R19
 Econtrolador_vagas_vhd_vec_tst
-Z20 w1653837462
+Z20 w1653871955
 R8
 R9
 R0
@@ -74,29 +74,29 @@ VH355RGJK2b8zkiTE9TST?0
 !s100 53dDWAU=ofj=UL2F5^oQG0
 R13
 32
-Z23 !s110 1653837471
+R14
 !i10b 1
-Z24 !s108 1653837471.000000
-Z25 !s90 -work|work|Waveform.vwf.vht|
-Z26 !s107 Waveform.vwf.vht|
+Z23 !s108 1653871963.000000
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
 !i113 1
 R18
 R19
 Acontrolador_vagas_arch
 R8
 R9
-Z27 DEx4 work 29 controlador_vagas_vhd_vec_tst 0 22 H355RGJK2b8zkiTE9TST?0
+Z26 DEx4 work 29 controlador_vagas_vhd_vec_tst 0 22 H355RGJK2b8zkiTE9TST?0
 l65
 L34
-Z28 VkPi8iW[IONSm_n:HhlDML2
-Z29 !s100 >C:``]RaYCVVoX<S?:GeO2
+V081A5hVk<RQ4RR4;UMUKz3
+!s100 Q44?Y[S0SfI[kJRgO5aIR1
 R13
 32
-R23
+R14
 !i10b 1
+R23
 R24
 R25
-R26
 !i113 1
 R18
 R19

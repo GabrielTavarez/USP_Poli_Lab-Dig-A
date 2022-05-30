@@ -1,5 +1,5 @@
 Analysis & Synthesis report for controlador_vagas
-Sun May 29 12:17:20 2022
+Sun May 29 21:49:07 2022
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 29 12:17:20 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sun May 29 21:49:07 2022       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; controlador_vagas                           ;
 ; Top-level Entity Name           ; controlador_vagas                           ;
@@ -184,12 +184,12 @@ agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 14         ;
+; Estimate of Logic utilization (ALMs needed) ; 13         ;
 ;                                             ;            ;
 ; Combinational ALUT usage for logic          ; 19         ;
 ;     -- 7 input functions                    ; 1          ;
-;     -- 6 input functions                    ; 7          ;
-;     -- 5 input functions                    ; 3          ;
+;     -- 6 input functions                    ; 6          ;
+;     -- 5 input functions                    ; 4          ;
 ;     -- 4 input functions                    ; 3          ;
 ;     -- <=3 input functions                  ; 5          ;
 ;                                             ;            ;
@@ -200,9 +200,9 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; load~input ;
-; Maximum fan-out                             ; 10         ;
-; Total fan-out                               ; 153        ;
-; Average fan-out                             ; 2.04       ;
+; Maximum fan-out                             ; 11         ;
+; Total fan-out                               ; 154        ;
+; Average fan-out                             ; 2.05       ;
 +---------------------------------------------+------------+
 
 
@@ -229,7 +229,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 7     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -250,21 +250,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 8                           ;
-;     CLR               ; 1                           ;
-;     ENA CLR           ; 7                           ;
+;     ENA CLR           ; 8                           ;
 ; arriav_lcell_comb     ; 19                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
 ;     normal            ; 18                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 3                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 4                           ;
 ;         4 data inputs ; 3                           ;
-;         5 data inputs ; 3                           ;
-;         6 data inputs ; 7                           ;
+;         5 data inputs ; 4                           ;
+;         6 data inputs ; 6                           ;
 ; boundary_port         ; 24                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.88                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.60                        ;
 +-----------------------+-----------------------------+
 
 
@@ -283,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun May 29 12:16:44 2022
+    Info: Processing started: Sun May 29 21:48:29 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off controlador_vagas -c controlador_vagas
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -300,7 +299,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
     Info (12022): Found design unit 1: comparador-comportamental File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_01/comparador_maior_igual.vhd Line: 16
     Info (12023): Found entity 1: comparador File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_01/comparador_maior_igual.vhd Line: 7
 Info (12127): Elaborating entity "controlador_vagas" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at controlador_vagas.vhd(36): object "conta_idosos_s" assigned a value but never read File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_01/controlador_vagas.vhd Line: 36
 Info (12128): Elaborating entity "up_down" for hierarchy "up_down:cont_idosos" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_01/controlador_vagas.vhd Line: 45
 Info (12128): Elaborating entity "comparador" for hierarchy "comparador:comp1" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_01/controlador_vagas.vhd Line: 65
 Info (286030): Timing-Driven Synthesis is running
@@ -310,10 +308,10 @@ Info (21057): Implemented 43 device resources after synthesis - the final resour
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 19 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 710 megabytes
-    Info: Processing ended: Sun May 29 12:17:20 2022
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:29
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 711 megabytes
+    Info: Processing ended: Sun May 29 21:49:07 2022
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:01:35
 
 

@@ -1,5 +1,5 @@
 Archive Project report for controlador_vagas
-Sun May 29 12:21:13 2022
+Sun May 29 21:58:32 2022
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sun May 29 12:21:13 2022 ;
+; Archive Project Status ; Successful - Sun May 29 21:58:32 2022 ;
 ; Revision Name          ; controlador_vagas                     ;
 ; Top-level Entity Name  ; controlador_vagas                     ;
 ; Family                 ; Cyclone V                             ;
@@ -60,7 +60,7 @@ Info: Generated report 'controlador_vagas.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/16.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 611 megabytes
-    Info: Processing ended: Sun May 29 12:21:13 2022
+    Info: Processing ended: Sun May 29 21:58:32 2022
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

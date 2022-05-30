@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/29/2022 12:17:42"
+-- Generated on "05/29/2022 21:52:35"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          controlador_vagas
 -- 
@@ -148,7 +148,11 @@ BEGIN
 	conta_idosos <= '0';
 	WAIT FOR 120000 ps;
 	conta_idosos <= '1';
-	WAIT FOR 160000 ps;
+	WAIT FOR 120000 ps;
+	conta_idosos <= '0';
+	WAIT FOR 80000 ps;
+	conta_idosos <= '1';
+	WAIT FOR 30000 ps;
 	conta_idosos <= '0';
 WAIT;
 END PROCESS t_prcs_conta_idosos;
@@ -182,6 +186,10 @@ BEGIN
 	entra_sai_idosos <= '0';
 	WAIT FOR 160000 ps;
 	entra_sai_idosos <= '1';
+	WAIT FOR 320000 ps;
+	entra_sai_idosos <= '0';
+	WAIT FOR 30000 ps;
+	entra_sai_idosos <= '1';
 WAIT;
 END PROCESS t_prcs_entra_sai_idosos;
 
@@ -192,6 +200,10 @@ BEGIN
 	WAIT FOR 450000 ps;
 	entra_sai_normal <= '0';
 	WAIT FOR 160000 ps;
+	entra_sai_normal <= '1';
+	WAIT FOR 320000 ps;
+	entra_sai_normal <= '0';
+	WAIT FOR 30000 ps;
 	entra_sai_normal <= '1';
 WAIT;
 END PROCESS t_prcs_entra_sai_normal;
