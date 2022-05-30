@@ -46,7 +46,7 @@ begin
                 conta_idosos_sm_dp <= '1';
                 conta_normal_sm_dp <= '0';
                 entra_sai_idosos_sm_dp <= entra_sai_idosos; --talvez dê errado
-                entra_sai_normal_sm_dp <= 'X';
+                entra_sai_normal_sm_dp <= entra_sai_idosos;
             when inc_normal =>
                 clear_sm_dp <= '0';
                 conta_idosos_sm_dp <= '0';
@@ -78,13 +78,17 @@ begin
             when inc_idosos =>
                 IF (cheio_dp_sm = '1') then
                     NextState <= cheio;
-                ELSE
+                ELSIF (conta_idosos = '1') then
+						NextState <= inc_idosos;
+					 ELSE
                     NextState <= vazio;
                 END IF;
             when inc_normal =>
                 IF (cheio_dp_sm = '1') then
                     NextState <= cheio;
-                ELSE
+                ELSIF (conta_normal = '1') then
+						NextState <= inc_normal;
+					 ELSE
                     NextState <= vazio;
                 END IF;
             when cheio =>

@@ -40,6 +40,30 @@
 					"strict" : false
 				},
 				{
+					"name" : "entra_sai_idosos_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "entra_sai_normal_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "conta_idosos_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "conta_normal_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "clear_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "cheio_dp_sm",
+					"strict" : false
+				},
+				{
 					"name" : "vagas_total[1]",
 					"strict" : false
 				},
@@ -56,14 +80,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "clear",
-					"strict" : false
-				},
-				{
 					"name" : "entra_sai_idosos",
 					"strict" : false
 				},
@@ -72,11 +88,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "conta_idosos",
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "clear",
 					"strict" : false
 				},
 				{
 					"name" : "conta_normal",
+					"strict" : false
+				},
+				{
+					"name" : "conta_idosos",
 					"strict" : false
 				}
 			]

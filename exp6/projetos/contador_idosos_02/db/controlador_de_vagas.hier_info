@@ -15,36 +15,49 @@ vagas_load[0] => fluxo_de_dados:FD.vagas_load[0]
 vagas_load[1] => fluxo_de_dados:FD.vagas_load[1]
 vagas_load[2] => fluxo_de_dados:FD.vagas_load[2]
 vagas_load[3] => fluxo_de_dados:FD.vagas_load[3]
-vagas_out_total[0] <= fluxo_de_dados:FD.vagas_out_total[0]
-vagas_out_total[1] <= fluxo_de_dados:FD.vagas_out_total[1]
-vagas_out_total[2] <= fluxo_de_dados:FD.vagas_out_total[2]
-vagas_out_total[3] <= fluxo_de_dados:FD.vagas_out_total[3]
-vagas_out_idosos[0] <= fluxo_de_dados:FD.vagas_out_idosos[0]
-vagas_out_idosos[1] <= fluxo_de_dados:FD.vagas_out_idosos[1]
-vagas_out_idosos[2] <= fluxo_de_dados:FD.vagas_out_idosos[2]
-vagas_out_idosos[3] <= fluxo_de_dados:FD.vagas_out_idosos[3]
-cheio <= fluxo_de_dados:FD.cheio
+vagas_out_total[0] << fluxo_de_dados:FD.vagas_out_total[0]
+vagas_out_total[1] << fluxo_de_dados:FD.vagas_out_total[1]
+vagas_out_total[2] << fluxo_de_dados:FD.vagas_out_total[2]
+vagas_out_total[3] << fluxo_de_dados:FD.vagas_out_total[3]
+vagas_out_idosos[0] << fluxo_de_dados:FD.vagas_out_idosos[0]
+vagas_out_idosos[1] << fluxo_de_dados:FD.vagas_out_idosos[1]
+vagas_out_idosos[2] << fluxo_de_dados:FD.vagas_out_idosos[2]
+vagas_out_idosos[3] << fluxo_de_dados:FD.vagas_out_idosos[3]
+cheio << fluxo_de_dados:FD.cheio
+entra_sai_idosos_sm_dp << unidade_de_controle:UC.entra_sai_idosos_sm_dp
+entra_sai_normal_sm_dp << unidade_de_controle:UC.entra_sai_normal_sm_dp
+conta_idosos_sm_dp << unidade_de_controle:UC.conta_idosos_sm_dp
+conta_normal_sm_dp << unidade_de_controle:UC.conta_normal_sm_dp
+clear_sm_dp << unidade_de_controle:UC.clear_sm_dp
+cheio_dp_sm << fluxo_de_dados:FD.cheio_dp_sm
 
 
 |controlador_de_vagas|unidade_de_controle:UC
+entra_sai_idosos => Selector1.IN0
 entra_sai_idosos => entra_sai_idosos_sm_dp.DATAIN
 entra_sai_idosos => update_next_state.IN0
-entra_sai_normal => entra_sai_normal_sm_dp.DATAIN
+entra_sai_normal => Selector1.IN1
 entra_sai_normal => update_next_state.IN0
 conta_idosos => NextState.OUTPUTSELECT
 conta_idosos => NextState.OUTPUTSELECT
+conta_idosos => NextState.DATAA
 conta_idosos => update_next_state.IN1
-conta_idosos => Selector3.IN3
+conta_idosos => Selector3.IN4
+conta_idosos => NextState.DATAA
+conta_normal => NextState.DATAA
 conta_normal => NextState.DATAA
 conta_normal => update_next_state.IN1
 conta_normal => NextState.DATAA
+conta_normal => NextState.DATAA
 clock => CurrentState~1.DATAIN
 clear => CurrentState~3.DATAIN
+cheio_dp_sm => NextState.OUTPUTSELECT
+cheio_dp_sm => NextState.OUTPUTSELECT
+cheio_dp_sm => NextState.OUTPUTSELECT
+cheio_dp_sm => NextState.OUTPUTSELECT
 cheio_dp_sm => Selector5.IN4
-cheio_dp_sm => Selector2.IN3
-cheio_dp_sm => Selector2.IN4
 entra_sai_idosos_sm_dp <= entra_sai_idosos.DB_MAX_OUTPUT_PORT_TYPE
-entra_sai_normal_sm_dp <= entra_sai_normal.DB_MAX_OUTPUT_PORT_TYPE
+entra_sai_normal_sm_dp <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
 conta_idosos_sm_dp <= conta_idosos_sm_dp.DB_MAX_OUTPUT_PORT_TYPE
 conta_normal_sm_dp <= conta_normal_sm_dp.DB_MAX_OUTPUT_PORT_TYPE
 clear_sm_dp <= clear_sm_dp.DB_MAX_OUTPUT_PORT_TYPE
@@ -83,7 +96,7 @@ vagas_out_idosos[0] <= up_down:cont_idosos.contagem[0]
 vagas_out_idosos[1] <= up_down:cont_idosos.contagem[1]
 vagas_out_idosos[2] <= up_down:cont_idosos.contagem[2]
 vagas_out_idosos[3] <= up_down:cont_idosos.contagem[3]
-cheio_dp_sm <= comb.DB_MAX_OUTPUT_PORT_TYPE
+cheio_dp_sm <= comparador:comp1.maior_igual
 cheio <= comparador:comp1.maior_igual
 
 

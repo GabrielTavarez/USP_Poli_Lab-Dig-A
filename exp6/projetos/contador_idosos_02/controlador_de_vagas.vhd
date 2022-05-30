@@ -9,7 +9,9 @@ entity controlador_de_vagas is
         clock, clear : in  std_logic;
         vagas_total, vagas_load: in std_logic_vector (3 downto 0);
         vagas_out_total, vagas_out_idosos : out std_logic_vector (3 downto 0);
-        cheio: out std_logic
+        cheio: out std_logic;
+		  entra_sai_idosos_sm_dp, entra_sai_normal_sm_dp, conta_idosos_sm_dp, conta_normal_sm_dp, clear_sm_dp, cheio_dp_sm: out std_logic
+		  
     );
 end controlador_de_vagas;
 
@@ -57,7 +59,7 @@ begin
     );
 
     FD: fluxo_De_dados port map(
-        clock => clock,
+        clock => NOT(clock),
         clear => clear,
         conta_idosos => conta_idosos_sm_dp_s,
         conta_normal => conta_normal_sm_dp_s,
@@ -72,5 +74,13 @@ begin
         cheio  => cheio
     );
 
+	 entra_sai_idosos_sm_dp <= entra_sai_idosos_sm_dp_s;
+	 entra_sai_normal_sm_dp <= entra_sai_normal_sm_dp_s;
+	 conta_idosos_sm_dp <= conta_idosos_sm_dp_s;
+	 conta_normal_sm_dp <= conta_normal_sm_dp_s;
+	 clear_sm_dp <= clear_sm_dp_s;
+	 cheio_dp_sm <= cheio_dp_sm_s;
+    
+    
 
     end arch;

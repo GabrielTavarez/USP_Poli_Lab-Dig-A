@@ -1,5 +1,5 @@
 Analysis & Synthesis report for controlador_de_vagas
-Sun May 29 14:54:42 2022
+Sun May 29 21:34:16 2022
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -14,13 +14,11 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |controlador_de_vagas|unidade_de_controle:UC|CurrentState
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Port Connectivity Checks: "fluxo_de_dados:FD"
- 12. Port Connectivity Checks: "unidade_de_controle:UC"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "fluxo_de_dados:FD"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -47,14 +45,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 29 14:54:42 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sun May 29 21:34:16 2022       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; controlador_de_vagas                        ;
 ; Top-level Entity Name           ; controlador_de_vagas                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 11                                          ;
-; Total pins                      ; 23                                          ;
+; Total registers                 ; 13                                          ;
+; Total pins                      ; 29                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -189,25 +187,25 @@ agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 10          ;
+; Estimate of Logic utilization (ALMs needed) ; 14          ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 17          ;
+; Combinational ALUT usage for logic          ; 24          ;
 ;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 2           ;
-;     -- 5 input functions                    ; 3           ;
-;     -- 4 input functions                    ; 5           ;
-;     -- <=3 input functions                  ; 7           ;
+;     -- 6 input functions                    ; 3           ;
+;     -- 5 input functions                    ; 5           ;
+;     -- 4 input functions                    ; 8           ;
+;     -- <=3 input functions                  ; 8           ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 11          ;
+; Dedicated logic registers                   ; 13          ;
 ;                                             ;             ;
-; I/O pins                                    ; 23          ;
+; I/O pins                                    ; 29          ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 11          ;
-; Total fan-out                               ; 133         ;
-; Average fan-out                             ; 1.80        ;
+; Maximum fan-out                             ; 13          ;
+; Total fan-out                               ; 184         ;
+; Average fan-out                             ; 1.94        ;
 +---------------------------------------------+-------------+
 
 
@@ -216,12 +214,12 @@ agreement for further details.
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Entity Name          ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------+----------------------+--------------+
-; |controlador_de_vagas       ; 17 (0)              ; 11 (0)                    ; 0                 ; 0          ; 23   ; 0            ; |controlador_de_vagas                                       ; controlador_de_vagas ; work         ;
-;    |fluxo_de_dados:FD|      ; 14 (2)              ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD                     ; fluxo_de_dados       ; work         ;
+; |controlador_de_vagas       ; 24 (0)              ; 13 (0)                    ; 0                 ; 0          ; 29   ; 0            ; |controlador_de_vagas                                       ; controlador_de_vagas ; work         ;
+;    |fluxo_de_dados:FD|      ; 13 (1)              ; 8 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD                     ; fluxo_de_dados       ; work         ;
 ;       |comparador:comp1|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD|comparador:comp1    ; comparador           ; work         ;
 ;       |up_down:cont_idosos| ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD|up_down:cont_idosos ; up_down              ; work         ;
 ;       |up_down:cont_total|  ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |controlador_de_vagas|fluxo_de_dados:FD|up_down:cont_total  ; up_down              ; work         ;
-;    |unidade_de_controle:UC| ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |controlador_de_vagas|unidade_de_controle:UC                ; unidade_de_controle  ; work         ;
+;    |unidade_de_controle:UC| ; 11 (11)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |controlador_de_vagas|unidade_de_controle:UC                ; unidade_de_controle  ; work         ;
 +-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -240,28 +238,17 @@ Encoding Type:  One-Hot
 +-------------------------+--------------------+-------------------------+-------------------------+--------------------+-------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                      ;
-+------------------------------------------------+----------------------------------------+
-; Register name                                  ; Reason for Removal                     ;
-+------------------------------------------------+----------------------------------------+
-; unidade_de_controle:UC|CurrentState.zera_vagas ; Lost fanout                            ;
-; unidade_de_controle:UC|CurrentState.cheio      ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 2          ;                                        ;
-+------------------------------------------------+----------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 11    ;
+; Total registers                              ; 13    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 11    ;
+; Number of registers using Asynchronous Clear ; 13    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -275,35 +262,26 @@ Encoding Type:  One-Hot
 +------+-------+----------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "unidade_de_controle:UC"                                                                    ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; clear_sm_dp ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 11                          ;
-;     CLR               ; 7                           ;
-;     ENA CLR           ; 4                           ;
-; arriav_lcell_comb     ; 17                          ;
-;     normal            ; 17                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 5                           ;
-;         5 data inputs ; 3                           ;
-;         6 data inputs ; 2                           ;
-; boundary_port         ; 23                          ;
+; arriav_ff             ; 13                          ;
+;     CLR               ; 5                           ;
+;     ENA CLR           ; 8                           ;
+; arriav_lcell_comb     ; 25                          ;
+;     normal            ; 25                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 8                           ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 3                           ;
+; boundary_port         ; 29                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.92                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.69                        ;
 +-----------------------+-----------------------------+
 
 
@@ -322,7 +300,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun May 29 14:54:03 2022
+    Info: Processing started: Sun May 29 21:33:38 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off controlador_de_vagas -c controlador_de_vagas
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -336,24 +314,21 @@ Info (12021): Found 2 design units, including 1 entities, in source file fluxo_d
     Info (12022): Found design unit 1: fluxo_de_dados-arch File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/fluxo_de_dados.vhd Line: 17
     Info (12023): Found entity 1: fluxo_de_dados File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/fluxo_de_dados.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file controlador_de_vagas.vhd
-    Info (12022): Found design unit 1: controlador_de_vagas-arch File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 17
+    Info (12022): Found design unit 1: controlador_de_vagas-arch File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 19
     Info (12023): Found entity 1: controlador_de_vagas File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file comparador_maior_igual.vhd
     Info (12022): Found design unit 1: comparador-comportamental File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/comparador_maior_igual.vhd Line: 16
     Info (12023): Found entity 1: comparador File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/comparador_maior_igual.vhd Line: 7
 Info (12127): Elaborating entity "controlador_de_vagas" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at controlador_de_vagas.vhd(39): object "clear_sm_dp_s" assigned a value but never read File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 39
-Info (12128): Elaborating entity "unidade_de_controle" for hierarchy "unidade_de_controle:UC" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 44
+Info (12128): Elaborating entity "unidade_de_controle" for hierarchy "unidade_de_controle:UC" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 46
 Warning (10492): VHDL Process Statement warning at unidade_de_controle.vhd(48): signal "entra_sai_idosos" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/unidade_de_controle.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at unidade_de_controle.vhd(49): signal "entra_sai_idosos" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/unidade_de_controle.vhd Line: 49
 Warning (10492): VHDL Process Statement warning at unidade_de_controle.vhd(55): signal "entra_sai_normal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/unidade_de_controle.vhd Line: 55
 Warning (10492): VHDL Process Statement warning at unidade_de_controle.vhd(67): signal "CurrentState" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/unidade_de_controle.vhd Line: 67
-Info (12128): Elaborating entity "fluxo_de_dados" for hierarchy "fluxo_de_dados:FD" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 59
-Warning (10541): VHDL Signal Declaration warning at fluxo_de_dados.vhd(12): used implicit default value for signal "cheio_dp_sm" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/fluxo_de_dados.vhd Line: 12
-Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(38): object "conta_idosos_s" assigned a value but never read File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/fluxo_de_dados.vhd Line: 38
+Info (12128): Elaborating entity "fluxo_de_dados" for hierarchy "fluxo_de_dados:FD" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 61
 Info (12128): Elaborating entity "up_down" for hierarchy "fluxo_de_dados:FD|up_down:cont_idosos" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/fluxo_de_dados.vhd Line: 47
 Info (12128): Elaborating entity "comparador" for hierarchy "fluxo_de_dados:FD|comparador:comp1" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/fluxo_de_dados.vhd Line: 67
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
@@ -361,14 +336,14 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "vagas_load[1]" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 10
     Warning (15610): No output dependent on input pin "vagas_load[2]" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 10
     Warning (15610): No output dependent on input pin "vagas_load[3]" File: C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp6/projetos/contador_idosos_02/controlador_de_vagas.vhd Line: 10
-Info (21057): Implemented 40 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 17 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 720 megabytes
-    Info: Processing ended: Sun May 29 14:54:42 2022
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:01:37
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 25 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 711 megabytes
+    Info: Processing ended: Sun May 29 21:34:16 2022
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:01:31
 
 
