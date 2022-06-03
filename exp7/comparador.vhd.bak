@@ -10,7 +10,7 @@ entity comparador is
 	);
 
     port (
-        A, B: in std_logic_vector (tamanho-1 downto 0); 
+        A, B: in std_logic_vector (tamanho downto 0); 
         maior: out STD_LOGIC;
         igual: out std_logic;
         menor: out std_logic

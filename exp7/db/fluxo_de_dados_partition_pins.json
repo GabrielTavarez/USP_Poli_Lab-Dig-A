@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "setor_determinado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "setor_determinado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "acionamento_setor",
+					"strict" : false
+				},
+				{
+					"name" : "setor_configurado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "setor_configurado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "produto_configurado[1]",
+					"strict" : false
+				},
+				{
+					"name" : "produto_lido[1]",
+					"strict" : false
+				},
+				{
+					"name" : "produto_configurado[0]",
+					"strict" : false
+				},
+				{
+					"name" : "produto_lido[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
