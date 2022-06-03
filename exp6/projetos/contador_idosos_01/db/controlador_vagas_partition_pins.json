@@ -56,14 +56,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "load",
-					"strict" : false
-				},
-				{
-					"name" : "vagas_load[0]",
-					"strict" : false
-				},
-				{
 					"name" : "clock",
 					"strict" : false
 				},
@@ -72,11 +64,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "entra_sai_normal",
-					"strict" : false
-				},
-				{
-					"name" : "entra_sai_idosos",
+					"name" : "conta_idosos",
 					"strict" : false
 				},
 				{
@@ -84,19 +72,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "conta_idosos",
+					"name" : "entra_sai_normal",
 					"strict" : false
 				},
 				{
-					"name" : "vagas_load[1]",
-					"strict" : false
-				},
-				{
-					"name" : "vagas_load[2]",
-					"strict" : false
-				},
-				{
-					"name" : "vagas_load[3]",
+					"name" : "entra_sai_idosos",
 					"strict" : false
 				}
 			]

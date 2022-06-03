@@ -11,10 +11,6 @@ vagas_total[0] => fluxo_de_dados:FD.vagas_total[0]
 vagas_total[1] => fluxo_de_dados:FD.vagas_total[1]
 vagas_total[2] => fluxo_de_dados:FD.vagas_total[2]
 vagas_total[3] => fluxo_de_dados:FD.vagas_total[3]
-vagas_load[0] => fluxo_de_dados:FD.vagas_load[0]
-vagas_load[1] => fluxo_de_dados:FD.vagas_load[1]
-vagas_load[2] => fluxo_de_dados:FD.vagas_load[2]
-vagas_load[3] => fluxo_de_dados:FD.vagas_load[3]
 vagas_out_total[0] << fluxo_de_dados:FD.vagas_out_total[0]
 vagas_out_total[1] << fluxo_de_dados:FD.vagas_out_total[1]
 vagas_out_total[2] << fluxo_de_dados:FD.vagas_out_total[2]
@@ -24,12 +20,6 @@ vagas_out_idosos[1] << fluxo_de_dados:FD.vagas_out_idosos[1]
 vagas_out_idosos[2] << fluxo_de_dados:FD.vagas_out_idosos[2]
 vagas_out_idosos[3] << fluxo_de_dados:FD.vagas_out_idosos[3]
 cheio << fluxo_de_dados:FD.cheio
-entra_sai_idosos_sm_dp << unidade_de_controle:UC.entra_sai_idosos_sm_dp
-entra_sai_normal_sm_dp << unidade_de_controle:UC.entra_sai_normal_sm_dp
-conta_idosos_sm_dp << unidade_de_controle:UC.conta_idosos_sm_dp
-conta_normal_sm_dp << unidade_de_controle:UC.conta_normal_sm_dp
-clear_sm_dp << unidade_de_controle:UC.clear_sm_dp
-cheio_dp_sm << fluxo_de_dados:FD.cheio_dp_sm
 
 
 |controlador_de_vagas|unidade_de_controle:UC

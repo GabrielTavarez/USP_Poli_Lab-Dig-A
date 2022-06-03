@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sun May 29 21:50:15 2022
-Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Fitter Status : Successful - Mon May 30 15:26:47 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : controlador_vagas
 Top-level Entity Name : controlador_vagas
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 14 / 18,480 ( < 1 % )
+Logic utilization (in ALMs) : 9 / 18,480 ( < 1 % )
 Total registers : 8
-Total pins : 24 / 224 ( 11 % )
+Total pins : 19 / 224 ( 8 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )
 Total RAM Blocks : 0 / 308 ( 0 % )

@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sun May 29 21:49:07 2022
-Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Mon May 30 15:26:27 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : controlador_vagas
 Top-level Entity Name : controlador_vagas
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 8
-Total pins : 24
+Total pins : 19
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

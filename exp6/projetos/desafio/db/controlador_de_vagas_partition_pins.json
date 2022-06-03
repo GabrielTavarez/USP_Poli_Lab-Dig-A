@@ -1,0 +1,129 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "vagas_ocupadas_normal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_ocupadas_normal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_ocupadas_normal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_ocupadas_normal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_ocupadas_idosos[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_ocupadas_idosos[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_ocupadas_idosos[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_ocupadas_idosos[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cheio_geral",
+					"strict" : false
+				},
+				{
+					"name" : "entra_sai_idosos_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "entra_sai_normal_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "conta_idosos_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "conta_normal_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "clear_sm_dp",
+					"strict" : false
+				},
+				{
+					"name" : "cheio_normal_dp_sm",
+					"strict" : false
+				},
+				{
+					"name" : "cheio_idosos_dp_sm",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total_idosos[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total_idosos[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total_idosos[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total_idosos[2]",
+					"strict" : false
+				},
+				{
+					"name" : "entra_sai_idosos",
+					"strict" : false
+				},
+				{
+					"name" : "entra_sai_normal",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "clear",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total_geral[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total_geral[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total_geral[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vagas_total_geral[1]",
+					"strict" : false
+				},
+				{
+					"name" : "conta_idosos",
+					"strict" : false
+				},
+				{
+					"name" : "conta_normal",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
