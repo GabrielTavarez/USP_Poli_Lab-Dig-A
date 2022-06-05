@@ -1,107 +1,52 @@
 m255
 K4
 z2
-!s11e vcom 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/barba/OneDrive/Documentos/prof/USP_Poli_Lab-Dig-A/exp7/simulation/qsim
-Efluxo_de_dados
-Z1 w1654299840
-Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
-Z3 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
-Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
-Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z6 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
-Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-Z10 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
-!i122 2
-R0
-Z11 8fluxo_de_dados.vho
-Z12 Ffluxo_de_dados.vho
-l0
-L39 1
-V94I[WBSg[;TUA>mCa^f;j1
-!s100 jK:9^_B>ka<J4BTanz]<30
-Z13 OV;C;2020.1;71
-32
-Z14 !s110 1654299842
+Z0 dC:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp7/simulation/qsim
+vfluxo_de_dados
+Z1 !s110 1654471052
 !i10b 1
-Z15 !s108 1654299841.000000
-Z16 !s90 -work|work|fluxo_de_dados.vho|
-Z17 !s107 fluxo_de_dados.vho|
+!s100 cciYPiHh4Q<3NfeaFXfYm2
+IkQZHL9NF0Za[jfGmRNX0k1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1654471045
+8fluxo_de_dados.vo
+Ffluxo_de_dados.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1654471052.000000
+!s107 fluxo_de_dados.vo|
+!s90 -work|work|fluxo_de_dados.vo|
 !i113 1
-Z18 o-work work
-Z19 tExplicit 1 CvgOpt 0
-Astructure
+Z5 o-work work
+Z6 tCvgOpt 0
+vfluxo_de_dados_vlg_vec_tst
+R1
+!i10b 1
+!s100 T6^4kQ5Z6eV[B1EG:J6=N2
+IzXUEgE=Rb5eD5`N0IS^ce2
 R2
+R0
+w1654471039
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
 R3
+r1
+!s85 0
+31
 R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
 R5
 R6
-R7
-R8
-R9
-R10
-DEx4 work 14 fluxo_de_dados 0 22 94I[WBSg[;TUA>mCa^f;j1
-!i122 2
-l109
-L70 265
-Vi3JSH2n?gQ5cZ8zSRL;CC0
-!s100 9UD27dTk^h4NDmj[O3TR@3
-R13
-32
-R14
-!i10b 1
-R15
-R16
-R17
-!i113 1
-R18
-R19
-Efluxo_de_dados_vhd_vec_tst
-Z20 w1654299839
-R8
-R9
-!i122 3
-R0
-Z21 8Waveform.vwf.vht
-Z22 FWaveform.vwf.vht
-l0
-L32 1
-VC2j^hakV^m@8mZLHk`hgc1
-!s100 iLGBn`An[gbcOj;0`Ea0S1
-R13
-32
-R14
-!i10b 1
-Z23 !s108 1654299842.000000
-Z24 !s90 -work|work|Waveform.vwf.vht|
-Z25 !s107 Waveform.vwf.vht|
-!i113 1
-R18
-R19
-Afluxo_de_dados_arch
-R8
-R9
-Z26 DEx4 work 26 fluxo_de_dados_vhd_vec_tst 0 22 C2j^hakV^m@8mZLHk`hgc1
-!i122 3
-l59
-Z27 L34 129
-Z28 V^ZX::aNTlP4PZ6X0W;oN[2
-Z29 !s100 X3Nj:N693RzGCQ>:Sb32<1
-R13
-32
-R14
-!i10b 1
-R23
-R24
-R25
-!i113 1
-R18
-R19

@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Jun 03 20:36:01 2022
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Sun Jun 05 20:12:38 2022
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : fluxo_de_dados
 Top-level Entity Name : fluxo_de_dados
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1
-Total pins : 14
+Total registers : 2
+Total pins : 10
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

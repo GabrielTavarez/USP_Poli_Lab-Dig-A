@@ -4,47 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "setor_determinado[0]",
+					"name" : "aciona",
 					"strict" : false
 				},
 				{
-					"name" : "setor_determinado[1]",
+					"name" : "SD",
 					"strict" : false
 				},
 				{
-					"name" : "acionamento_setor",
+					"name" : "SC",
 					"strict" : false
 				},
 				{
-					"name" : "setor_configurado[0]",
+					"name" : "PC0",
 					"strict" : false
 				},
 				{
-					"name" : "setor_configurado[1]",
+					"name" : "PL0",
 					"strict" : false
 				},
 				{
-					"name" : "produto_configurado[1]",
+					"name" : "PC1",
 					"strict" : false
 				},
 				{
-					"name" : "produto_lido[1]",
+					"name" : "PL1",
 					"strict" : false
 				},
 				{
-					"name" : "produto_configurado[0]",
-					"strict" : false
-				},
-				{
-					"name" : "produto_lido[0]",
+					"name" : "proximo",
 					"strict" : false
 				},
 				{
 					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
 					"strict" : false
 				}
 			]

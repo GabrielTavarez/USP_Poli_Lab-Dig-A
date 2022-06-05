@@ -1,46 +1,13 @@
 |fluxo_de_dados
-clock => flipflop:ff.clock
-reset => flipflop:ff.reset
-proximo => ~NO_FANOUT~
-produto_configurado[0] => comparador:comp.A[0]
-produto_configurado[1] => comparador:comp.A[1]
-setor_configurado[0] => setor_determinado[0].DATAIN
-setor_configurado[1] => setor_determinado[1].DATAIN
-produto_lido[0] => comparador:comp.B[0]
-produto_lido[1] => comparador:comp.B[1]
-setor_lido[0] => ~NO_FANOUT~
-setor_lido[1] => ~NO_FANOUT~
-setor_determinado[0] <= setor_configurado[0].DB_MAX_OUTPUT_PORT_TYPE
-setor_determinado[1] <= setor_configurado[1].DB_MAX_OUTPUT_PORT_TYPE
-acionamento_setor <= flipflop:ff.Q
-
-
-|fluxo_de_dados|comparador:comp
-A[0] => LessThan0.IN6
-A[0] => LessThan1.IN6
-A[0] => Equal0.IN5
-A[1] => LessThan0.IN5
-A[1] => LessThan1.IN5
-A[1] => Equal0.IN4
-B[0] => LessThan0.IN8
-B[0] => LessThan1.IN8
-B[0] => Equal0.IN7
-B[1] => LessThan0.IN7
-B[1] => LessThan1.IN7
-B[1] => Equal0.IN6
-maior <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
-igual <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
-menor <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|fluxo_de_dados|flipflop:ff
-clock => Qn~reg0.CLK
-clock => Q~reg0.CLK
-reset => Qn~reg0.ACLR
-reset => Q~reg0.ACLR
-D => Q~reg0.DATAIN
-D => Qn~reg0.DATAIN
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn <= Qn~reg0.DB_MAX_OUTPUT_PORT_TYPE
+aciona <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst5.CLK
+proximo => inst5.DATAIN
+PC0 => inst.IN0
+PL0 => inst.IN1
+PC1 => inst1.IN0
+PL1 => inst1.IN1
+SD <= SC.DB_MAX_OUTPUT_PORT_TYPE
+SC => SD.DATAIN
+SL => ~NO_FANOUT~
 
 
