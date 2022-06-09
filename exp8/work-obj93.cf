@@ -1,0 +1,4 @@
+v 4
+file . "unidade_de_controle.vhd" "1f39c31d50a3cb8725df03c4e52bbdfb2e1fba8a" "20220609190408.124":
+  entity unidade_de_controle at 2( 23) + 0 on 11;
+  architecture arch of unidade_de_controle at 15( 294) + 0 on 12;
