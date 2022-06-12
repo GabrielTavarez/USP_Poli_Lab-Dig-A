@@ -1,0 +1,9 @@
+|unidade_de_controle
+muda_estado => NextState.mudanca_op_conf.DATAB
+muda_estado => NextState.mudanca_conf_op.DATAA
+muda_estado => Selector0.IN1
+muda_estado => Selector1.IN1
+clock => CurrentState~1.DATAIN
+modo <= modo.DB_MAX_OUTPUT_PORT_TYPE
+
+

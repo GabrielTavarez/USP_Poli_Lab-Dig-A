@@ -1,0 +1,7 @@
+
+State Machine - |unidade_de_controle|CurrentState
+Name CurrentState.mudanca_conf_op CurrentState.mudanca_op_conf CurrentState.configuracao CurrentState.operacao 
+CurrentState.operacao 0 0 0 0 
+CurrentState.configuracao 0 0 1 1 
+CurrentState.mudanca_op_conf 0 1 0 1 
+CurrentState.mudanca_conf_op 1 0 0 1 

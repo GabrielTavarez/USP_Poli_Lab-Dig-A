@@ -1,0 +1,16 @@
+|fluxo_de_dados
+pin_name1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst13.CLK
+clock => inst1.IN1
+proximo => inst13.DATAIN
+PL1 => inst7.IN0
+modo => inst1.IN0
+PC0 => inst17.DATAIN
+PL0 => inst5.IN0
+PC1 => inst15.DATAIN
+SC0 => inst16.DATAIN
+SL0 => inst8.IN1
+SC1 => inst12.DATAIN
+SL1 => inst6.IN1
+
+

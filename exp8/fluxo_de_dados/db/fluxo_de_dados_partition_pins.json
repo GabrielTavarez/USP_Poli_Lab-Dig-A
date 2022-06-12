@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pin_name1",
+					"strict" : false
+				},
+				{
+					"name" : "SL0",
+					"strict" : false
+				},
+				{
+					"name" : "SL1",
+					"strict" : false
+				},
+				{
+					"name" : "PL1",
+					"strict" : false
+				},
+				{
+					"name" : "PL0",
+					"strict" : false
+				},
+				{
+					"name" : "SC0",
+					"strict" : false
+				},
+				{
+					"name" : "SC1",
+					"strict" : false
+				},
+				{
+					"name" : "PC0",
+					"strict" : false
+				},
+				{
+					"name" : "PC1",
+					"strict" : false
+				},
+				{
+					"name" : "proximo",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "modo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
