@@ -15,7 +15,11 @@ end unidade_de_controle;
 architecture arch of unidade_de_controle is
     type state_type is (operacao, configuracao,mudanca_op_conf, mudanca_conf_op);
     signal CurrentState, NextState : state_type;
+	 signal n_muda_estado_s : std_logic;
 begin  
+	
+	n_muda_estado_s <= NOT(muda_estado);
+
     update_state: process (clock) 
     begin
         if (rising_edge(clock)) then 
@@ -37,29 +41,29 @@ begin
             end case;
         end process update_output;
 
-        update_next_state: process(muda_estado)
+        update_next_state: process(n_muda_estado_s)
         begin
             case CurrentState is 
             when operacao =>
-                IF (muda_estado = '1') then
+                IF (n_muda_estado_s = '1') then
                     NextState <= mudanca_op_conf;
                 ELSE
                     NextState <= operacao;
                 END IF;
             when mudanca_op_conf =>
-                IF (muda_estado = '0') then
+                IF (n_muda_estado_s = '0') then
                     NextState <= configuracao;
                 ELSE
                     NextState <= mudanca_op_conf;
                 END IF;
 				 when configuracao =>
-                IF (muda_estado = '1') then
+                IF (n_muda_estado_s = '1') then
                     NextState <= mudanca_conf_op;
                 ELSE
                     NextState <= configuracao;
                 END IF;
 				when mudanca_conf_op =>
-                IF (muda_estado = '0') then
+                IF (n_muda_estado_s = '0') then
                     NextState <= operacao;
                 ELSE
                     NextState <= mudanca_conf_op;

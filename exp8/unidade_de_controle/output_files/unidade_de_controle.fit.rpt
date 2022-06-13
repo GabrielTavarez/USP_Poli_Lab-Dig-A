@@ -1,6 +1,6 @@
 Fitter report for unidade_de_controle
-Sun Jun 12 13:03:51 2022
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Mon Jun 13 16:52:28 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -43,28 +43,28 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun Jun 12 13:03:51 2022       ;
-; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Fitter Status                   ; Successful - Mon Jun 13 16:52:28 2022       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; unidade_de_controle                         ;
 ; Top-level Entity Name           ; unidade_de_controle                         ;
 ; Family                          ; Cyclone V                                   ;
@@ -86,63 +86,63 @@ agreement for further details.
 +---------------------------------+---------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Settings                                                                                                                                            ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
-; Option                                                                     ; Setting                               ; Default Value                         ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
-; Device                                                                     ; 5CEBA4F23C7                           ;                                       ;
-; Minimum Core Junction Temperature                                          ; 0                                     ;                                       ;
-; Maximum Core Junction Temperature                                          ; 85                                    ;                                       ;
-; Use smart compilation                                                      ; Off                                   ; Off                                   ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On                                    ;
-; Enable compact report table                                                ; Off                                   ; Off                                   ;
-; Router Timing Optimization Level                                           ; Normal                                ; Normal                                ;
-; Perform Clocking Topology Analysis During Routing                          ; Off                                   ; Off                                   ;
-; Placement Effort Multiplier                                                ; 1.0                                   ; 1.0                                   ;
-; Device initialization clock source                                         ; INIT_INTOSC                           ; INIT_INTOSC                           ;
-; Optimize Hold Timing                                                       ; All Paths                             ; All Paths                             ;
-; Optimize Multi-Corner Timing                                               ; On                                    ; On                                    ;
-; Auto RAM to MLAB Conversion                                                ; On                                    ; On                                    ;
-; Equivalent RAM and MLAB Power Up                                           ; Auto                                  ; Auto                                  ;
-; Equivalent RAM and MLAB Paused Read Capabilities                           ; Care                                  ; Care                                  ;
-; PowerPlay Power Optimization During Fitting                                ; Normal compilation                    ; Normal compilation                    ;
-; SSN Optimization                                                           ; Off                                   ; Off                                   ;
-; Optimize Timing                                                            ; Normal compilation                    ; Normal compilation                    ;
-; Optimize Timing for ECOs                                                   ; Off                                   ; Off                                   ;
-; Regenerate Full Fit Report During ECO Compiles                             ; Off                                   ; Off                                   ;
-; Optimize IOC Register Placement for Timing                                 ; Normal                                ; Normal                                ;
-; Final Placement Optimizations                                              ; Automatically                         ; Automatically                         ;
-; Fitter Aggressive Routability Optimizations                                ; Automatically                         ; Automatically                         ;
-; Fitter Initial Placement Seed                                              ; 1                                     ; 1                                     ;
-; Periphery to Core Placement and Routing Optimization                       ; Off                                   ; Off                                   ;
-; Weak Pull-Up Resistor                                                      ; Off                                   ; Off                                   ;
-; Enable Bus-Hold Circuitry                                                  ; Off                                   ; Off                                   ;
-; Auto Packed Registers                                                      ; Auto                                  ; Auto                                  ;
-; Auto Delay Chains                                                          ; On                                    ; On                                    ;
-; Auto Delay Chains for High Fanout Input Pins                               ; Off                                   ; Off                                   ;
-; Treat Bidirectional Pin as Output Pin                                      ; Off                                   ; Off                                   ;
-; Perform Physical Synthesis for Combinational Logic for Fitting             ; Off                                   ; Off                                   ;
-; Perform Physical Synthesis for Combinational Logic for Performance         ; Off                                   ; Off                                   ;
-; Perform Register Duplication for Performance                               ; Off                                   ; Off                                   ;
-; Perform Register Retiming for Performance                                  ; Off                                   ; Off                                   ;
-; Perform Asynchronous Signal Pipelining                                     ; Off                                   ; Off                                   ;
-; Fitter Effort                                                              ; Auto Fit                              ; Auto Fit                              ;
-; Physical Synthesis Effort Level                                            ; Normal                                ; Normal                                ;
-; Logic Cell Insertion - Logic Duplication                                   ; Auto                                  ; Auto                                  ;
-; Auto Register Duplication                                                  ; Auto                                  ; Auto                                  ;
-; Auto Global Clock                                                          ; On                                    ; On                                    ;
-; Auto Global Register Control Signals                                       ; On                                    ; On                                    ;
-; Reserve all unused pins                                                    ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
-; Synchronizer Identification                                                ; Auto                                  ; Auto                                  ;
-; Enable Beneficial Skew Optimization                                        ; On                                    ; On                                    ;
-; Optimize Design for Metastability                                          ; On                                    ; On                                    ;
-; Active Serial clock source                                                 ; FREQ_100MHz                           ; FREQ_100MHz                           ;
-; Force Fitter to Avoid Periphery Placement Warnings                         ; Off                                   ; Off                                   ;
-; Clamping Diode                                                             ; Off                                   ; Off                                   ;
-; Enable input tri-state on active configuration pins in user mode           ; Off                                   ; Off                                   ;
-; Advanced Physical Optimization                                             ; On                                    ; On                                    ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                                                                    ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Option                                                             ; Setting                               ; Default Value                         ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Device                                                             ; 5CEBA4F23C7                           ;                                       ;
+; Minimum Core Junction Temperature                                  ; 0                                     ;                                       ;
+; Maximum Core Junction Temperature                                  ; 85                                    ;                                       ;
+; Use smart compilation                                              ; Off                                   ; Off                                   ;
+; Enable parallel Assembler and Timing Analyzer during compilation   ; On                                    ; On                                    ;
+; Enable compact report table                                        ; Off                                   ; Off                                   ;
+; Router Timing Optimization Level                                   ; Normal                                ; Normal                                ;
+; Perform Clocking Topology Analysis During Routing                  ; Off                                   ; Off                                   ;
+; Placement Effort Multiplier                                        ; 1.0                                   ; 1.0                                   ;
+; Device initialization clock source                                 ; INIT_INTOSC                           ; INIT_INTOSC                           ;
+; Optimize Hold Timing                                               ; All Paths                             ; All Paths                             ;
+; Optimize Multi-Corner Timing                                       ; On                                    ; On                                    ;
+; Auto RAM to MLAB Conversion                                        ; On                                    ; On                                    ;
+; Equivalent RAM and MLAB Power Up                                   ; Auto                                  ; Auto                                  ;
+; Equivalent RAM and MLAB Paused Read Capabilities                   ; Care                                  ; Care                                  ;
+; Power Optimization During Fitting                                  ; Normal compilation                    ; Normal compilation                    ;
+; SSN Optimization                                                   ; Off                                   ; Off                                   ;
+; Optimize Timing                                                    ; Normal compilation                    ; Normal compilation                    ;
+; Optimize Timing for ECOs                                           ; Off                                   ; Off                                   ;
+; Regenerate Full Fit Report During ECO Compiles                     ; Off                                   ; Off                                   ;
+; Optimize IOC Register Placement for Timing                         ; Normal                                ; Normal                                ;
+; Final Placement Optimizations                                      ; Automatically                         ; Automatically                         ;
+; Fitter Aggressive Routability Optimizations                        ; Automatically                         ; Automatically                         ;
+; Fitter Initial Placement Seed                                      ; 1                                     ; 1                                     ;
+; Periphery to Core Placement and Routing Optimization               ; Off                                   ; Off                                   ;
+; Weak Pull-Up Resistor                                              ; Off                                   ; Off                                   ;
+; Enable Bus-Hold Circuitry                                          ; Off                                   ; Off                                   ;
+; Auto Packed Registers                                              ; Auto                                  ; Auto                                  ;
+; Auto Delay Chains                                                  ; On                                    ; On                                    ;
+; Auto Delay Chains for High Fanout Input Pins                       ; Off                                   ; Off                                   ;
+; Treat Bidirectional Pin as Output Pin                              ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Fitting     ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Performance ; Off                                   ; Off                                   ;
+; Perform Register Duplication for Performance                       ; Off                                   ; Off                                   ;
+; Perform Register Retiming for Performance                          ; Off                                   ; Off                                   ;
+; Perform Asynchronous Signal Pipelining                             ; Off                                   ; Off                                   ;
+; Fitter Effort                                                      ; Auto Fit                              ; Auto Fit                              ;
+; Physical Synthesis Effort Level                                    ; Normal                                ; Normal                                ;
+; Logic Cell Insertion - Logic Duplication                           ; Auto                                  ; Auto                                  ;
+; Auto Register Duplication                                          ; Auto                                  ; Auto                                  ;
+; Auto Global Clock                                                  ; On                                    ; On                                    ;
+; Auto Global Register Control Signals                               ; On                                    ; On                                    ;
+; Reserve all unused pins                                            ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
+; Synchronizer Identification                                        ; Auto                                  ; Auto                                  ;
+; Enable Beneficial Skew Optimization                                ; On                                    ; On                                    ;
+; Optimize Design for Metastability                                  ; On                                    ; On                                    ;
+; Active Serial clock source                                         ; FREQ_100MHz                           ; FREQ_100MHz                           ;
+; Force Fitter to Avoid Periphery Placement Warnings                 ; Off                                   ; Off                                   ;
+; Clamping Diode                                                     ; Off                                   ; Off                                   ;
+; Enable input tri-state on active configuration pins in user mode   ; Off                                   ; Off                                   ;
+; Advanced Physical Optimization                                     ; On                                    ; On                                    ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
 
 
 +------------------------------------------+
@@ -158,8 +158,8 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processors 3-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -210,7 +210,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp8/unidade_de_controle/output_files/unidade_de_controle.pin.
+The pin-out file can be found in C:/Users/Operador/Documents/USP_Poli_Lab-Dig-A/exp8/unidade_de_controle/output_files/unidade_de_controle.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -256,7 +256,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 3 / 224            ; 1 %   ;
-;     -- Clock pins                                           ; 1 / 9              ; 11 %  ;
+;     -- Clock pins                                           ; 0 / 9              ; 0 %   ;
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; M10K blocks                                                 ; 0 / 308            ; 0 %   ;
@@ -279,7 +279,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.0% / 0.0% / 0.0% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.0% / 0.0% / 0.1% ;       ;
 ; Maximum fan-out                                             ; 4                  ;       ;
 ; Highest non-global fan-out                                  ; 4                  ;       ;
 ; Total fan-out                                               ; 27                 ;       ;
@@ -379,8 +379,8 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; clock       ; M16   ; 5B       ; 54           ; 18           ; 60           ; 4                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; muda_estado ; P18   ; 5A       ; 54           ; 17           ; 54           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; clock       ; A12   ; 7A       ; 36           ; 45           ; 51           ; 4                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; muda_estado ; M6    ; 3A       ; 14           ; 0            ; 17           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -389,24 +389,24 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; modo ; P16   ; 5A       ; 54           ; 17           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; modo ; B12   ; 7A       ; 36           ; 45           ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+---------------------------------------------------------------------------+
-; I/O Bank Usage                                                            ;
-+----------+-----------------+---------------+--------------+---------------+
-; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
-+----------+-----------------+---------------+--------------+---------------+
-; 2A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 3A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 0 / 48 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 2 / 16 ( 13 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 5B       ; 1 / 16 ( 6 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 7A       ; 0 / 48 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 8A       ; 0 / 32 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
-+----------+-----------------+---------------+--------------+---------------+
++--------------------------------------------------------------------------+
+; I/O Bank Usage                                                           ;
++----------+----------------+---------------+--------------+---------------+
+; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
++----------+----------------+---------------+--------------+---------------+
+; 2A       ; 0 / 16 ( 0 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 3A       ; 1 / 16 ( 6 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 0 / 32 ( 0 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 0 / 48 ( 0 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 0 / 16 ( 0 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 5B       ; 0 / 16 ( 0 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 7A       ; 2 / 48 ( 4 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 8A       ; 0 / 32 ( 0 % ) ; 2.5V          ; --           ; 2.5V          ;
++----------+----------------+---------------+--------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -425,7 +425,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; A9       ; 262        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A10      ; 260        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A11      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; A12      ; 242        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; A12      ; 242        ; 7A       ; clock                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; A13      ; 230        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A14      ; 218        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A15      ; 216        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -491,7 +491,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; B9       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B10      ; 263        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B11      ; 250        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; B12      ; 240        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; B12      ; 240        ; 7A       ; modo                            ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; B13      ; 228        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B14      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B15      ; 225        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -705,7 +705,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; M3       ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; M4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M5       ; 48         ; 3A       ; #TDO                            ; output ;              ;                     ; --           ;                 ; --       ; --           ;
-; M6       ; 70         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; M6       ; 70         ; 3A       ; muda_estado                     ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; M7       ; 72         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; M8       ; 86         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; M9       ; 88         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -715,7 +715,7 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; M13      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; M14      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; M16      ; 172        ; 5B       ; clock                           ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; M16      ; 172        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M17      ;            ; 5B       ; VCCPD5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; M18      ; 176        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; M19      ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -759,9 +759,9 @@ The pin-out file can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_La
 ; P13      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P14      ; 142        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; P16      ; 167        ; 5A       ; modo                            ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; P16      ; 167        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P17      ; 169        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; P18      ; 168        ; 5A       ; muda_estado                     ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; P18      ; 168        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P19      ; 166        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P20      ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; P21      ;            ; 5A       ; VCCPD5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -910,9 +910,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; modo        ; Incomplete set of assignments ;
 ; muda_estado ; Incomplete set of assignments ;
 ; clock       ; Incomplete set of assignments ;
-; modo        ; Missing location assignment   ;
-; muda_estado ; Missing location assignment   ;
-; clock       ; Missing location assignment   ;
 +-------------+-------------------------------+
 
 
@@ -932,8 +929,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name        ; Pin Type ; D1 ; D3_0 ; D3_1 ; D4 ; D5   ; D5 OE ; D5 OCT ; T11 (Postamble Gating) ; T11 (Postamble Ungating) ;
 +-------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 ; modo        ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; muda_estado ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; clock       ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; muda_estado ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; clock       ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +-------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -943,11 +940,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                ; Pad To Core Index ; Setting ;
 +------------------------------------+-------------------+---------+
 ; muda_estado                        ;                   ;         ;
-;      - Selector0~0                 ; 1                 ; 0       ;
-;      - NextState.mudanca_conf_op~0 ; 1                 ; 0       ;
-;      - Selector1~0                 ; 1                 ; 0       ;
-;      - NextState.mudanca_op_conf~0 ; 1                 ; 0       ;
+;      - Selector0~0                 ; 0                 ; 0       ;
+;      - NextState.mudanca_conf_op~0 ; 0                 ; 0       ;
+;      - Selector1~0                 ; 0                 ; 0       ;
+;      - NextState.mudanca_op_conf~0 ; 0                 ; 0       ;
 ; clock                              ;                   ;         ;
+;      - clock~inputCLKENA0          ; 1                 ; 0       ;
 +------------------------------------+-------------------+---------+
 
 
@@ -956,7 +954,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 ; Name  ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
-; clock ; PIN_M16  ; 4       ; Clock ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; clock ; PIN_A12  ; 4       ; Clock ; yes    ; Global Clock         ; GCLK15           ; --                        ;
 +-------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 
 
@@ -965,7 +963,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------+----------------------+------------------+---------------------------+
 ; Name  ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
-; clock ; PIN_M16  ; 4       ; Global Clock         ; GCLK10           ; --                        ;
+; clock ; PIN_A12  ; 4       ; Global Clock         ; GCLK15           ; --                        ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -974,10 +972,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+-----------------------+
 ; Routing Resource Type        ; Usage                 ;
 +------------------------------+-----------------------+
-; Block interconnects          ; 5 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 0 / 6,048 ( 0 % )     ;
-; C2 interconnects             ; 0 / 54,648 ( 0 % )    ;
-; C4 interconnects             ; 0 / 25,920 ( 0 % )    ;
+; Block interconnects          ; 6 / 140,056 ( < 1 % ) ;
+; C12 interconnects            ; 4 / 6,048 ( < 1 % )   ;
+; C2 interconnects             ; 4 / 54,648 ( < 1 % )  ;
+; C4 interconnects             ; 1 / 25,920 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )        ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )        ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )        ;
@@ -985,10 +983,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Global clocks                ; 1 / 16 ( 6 % )        ;
 ; Local interconnects          ; 3 / 36,960 ( < 1 % )  ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )        ;
-; R14 interconnects            ; 0 / 5,984 ( 0 % )     ;
-; R14/C12 interconnect drivers ; 0 / 9,504 ( 0 % )     ;
+; R14 interconnects            ; 1 / 5,984 ( < 1 % )   ;
+; R14/C12 interconnect drivers ; 4 / 9,504 ( < 1 % )   ;
 ; R3 interconnects             ; 2 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 1 / 127,072 ( < 1 % ) ;
+; R6 interconnects             ; 6 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 1 / 120 ( < 1 % )     ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )     ;
 +------------------------------+-----------------------+
@@ -1000,10 +998,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; I/O Rules Statistic              ; Total ;
 +----------------------------------+-------+
 ; Total I/O Rules                  ; 28    ;
-; Number of I/O Rules Passed       ; 6     ;
+; Number of I/O Rules Passed       ; 9     ;
 ; Number of I/O Rules Failed       ; 0     ;
 ; Number of I/O Rules Unchecked    ; 0     ;
-; Number of I/O Rules Inapplicable ; 22    ;
+; Number of I/O Rules Inapplicable ; 19    ;
 +----------------------------------+-------+
 
 
@@ -1012,13 +1010,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 ; Status       ; ID        ; Category                          ; Rule Description                                                                   ; Severity ; Information                                                              ; Area                ; Extra Information ;
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
-; Inapplicable ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available. ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available. ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.  ; Critical ; No Global Signal assignments found.                                      ; I/O                 ;                   ;
-; Inapplicable ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available. ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available. ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000004 ; Voltage Compatibility Checks      ; The I/O bank should support the requested VCCIO.                                   ; Critical ; No IOBANK_VCCIO assignments found.                                       ; I/O                 ;                   ;
 ; Inapplicable ; IO_000005 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VREF values.                                ; Critical ; No VREF I/O Standard assignments found.                                  ; I/O                 ;                   ;
 ; Pass         ; IO_000006 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VCCIO values.                               ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                  ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                  ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000008 ; Valid Location Checks             ; Checks for reserved locations.                                                     ; Critical ; No reserved LogicLock region found.                                      ; I/O                 ;                   ;
 ; Pass         ; IO_000009 ; I/O Properties Checks for One I/O ; The location should support the requested I/O standard.                            ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Pass         ; IO_000010 ; I/O Properties Checks for One I/O ; The location should support the requested I/O direction.                           ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
@@ -1044,19 +1042,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                              ;
-+--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
-+--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 3         ; 0            ; 0            ; 3         ; 3         ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 3            ; 3            ; 3            ; 3            ; 3            ; 0         ; 3            ; 3            ; 0         ; 0         ; 3            ; 2            ; 3            ; 3            ; 3            ; 3            ; 2            ; 3            ; 3            ; 3            ; 3            ; 2            ; 3            ; 3            ; 3            ; 3            ; 3            ; 3            ;
-; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; modo               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; muda_estado        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; clock              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-+--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
++--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Total Pass         ; 3         ; 0            ; 3         ; 0            ; 0            ; 3         ; 3         ; 0            ; 3         ; 3         ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Inapplicable ; 0         ; 3            ; 0         ; 3            ; 3            ; 0         ; 0         ; 3            ; 0         ; 0         ; 3            ; 2            ; 3            ; 3            ; 3            ; 3            ; 2            ; 3            ; 3            ; 3            ; 3            ; 2            ; 3            ; 3            ; 3            ; 3            ; 3            ; 3            ;
+; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; modo               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; muda_estado        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; clock              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
++--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------+
@@ -1110,7 +1108,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; clock           ; clock                ; 1.8               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
 +---------------------------------------------------------------------------------+
@@ -1118,10 +1116,10 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------+------------------------------+-------------------+
 ; Source Register              ; Destination Register         ; Delay Added in ns ;
 +------------------------------+------------------------------+-------------------+
-; CurrentState.operacao        ; CurrentState.configuracao    ; 0.278             ;
-; CurrentState.mudanca_conf_op ; CurrentState.configuracao    ; 0.264             ;
-; CurrentState.configuracao    ; CurrentState.operacao        ; 0.246             ;
-; CurrentState.mudanca_op_conf ; CurrentState.mudanca_conf_op ; 0.243             ;
+; CurrentState.operacao        ; CurrentState.configuracao    ; 0.276             ;
+; CurrentState.mudanca_conf_op ; CurrentState.configuracao    ; 0.262             ;
+; CurrentState.configuracao    ; CurrentState.operacao        ; 0.244             ;
+; CurrentState.mudanca_op_conf ; CurrentState.mudanca_conf_op ; 0.241             ;
 +------------------------------+------------------------------+-------------------+
 Note: This table only shows the top 4 path(s) that have the largest delay added for hold.
 
@@ -1137,49 +1135,52 @@ Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 3 pins of 3 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): clock~inputCLKENA0 with 4 fanout uses global clock CLKCTRL_G10
+    Info (11162): clock~inputCLKENA0 with 4 fanout uses global clock CLKCTRL_G13
+        Info (12525): This signal is driven by core routing -- it may be moved during placement to reduce routing delays
+Warning (16406): 1 global input pin(s) will use non-dedicated clock routing
+    Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver clock~inputCLKENA0, placed at CLKCTRL_G13
+        Info (179012): Refclk input I/O pad clock is placed onto PIN_A12
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:20
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'unidade_de_controle.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:04
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'unidade_de_controle.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X44_Y11 to location X54_Y22
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X22_Y34 to location X32_Y45
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.59 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:08
-Info (144001): Generated suppressed messages file C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp8/unidade_de_controle/output_files/unidade_de_controle.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 2046 megabytes
-    Info: Processing ended: Sun Jun 12 13:03:53 2022
-    Info: Elapsed time: 00:01:08
-    Info: Total CPU time (on all processors): 00:01:49
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (144001): Generated suppressed messages file C:/Users/Operador/Documents/USP_Poli_Lab-Dig-A/exp8/unidade_de_controle/output_files/unidade_de_controle.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 6207 megabytes
+    Info: Processing ended: Mon Jun 13 16:52:28 2022
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:31
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Sophia/Documents/parasitas/USP_Poli_Lab-Dig-A/exp8/unidade_de_controle/output_files/unidade_de_controle.fit.smsg.
+The suppressed messages can be found in C:/Users/Operador/Documents/USP_Poli_Lab-Dig-A/exp8/unidade_de_controle/output_files/unidade_de_controle.fit.smsg.
 
 
