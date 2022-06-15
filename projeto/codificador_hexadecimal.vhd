@@ -17,21 +17,19 @@ begin
         CASE entrada_bin is
             WHEN entrada_bin = "000"
                 saida_hexa <= "";
-            WHEN entrada_bin = "000"
+            WHEN entrada_bin = "001"
                 saida_hexa <= "";
-            WHEN entrada_bin = "000"
+            WHEN entrada_bin = "010"
                 saida_hexa <= "";
-            WHEN entrada_bin = "000"
+            WHEN entrada_bin = "011"
                 saida_hexa <= "";
-            WHEN entrada_bin = "000"
+            WHEN entrada_bin = "100"
                 saida_hexa <= "";
-            WHEN entrada_bin = "000"
+            WHEN entrada_bin = "101"
                 saida_hexa <= "";
-            WHEN entrada_bin = "000"
+            WHEN entrada_bin = "110"
                 saida_hexa <= "";
-            WHEN entrada_bin = "000"
-                saida_hexa <= "";
-            WHEN entrada_bin = "000"
+            WHEN entrada_bin = "111"
                 saida_hexa <= "";
         END CASE;
     END PROCESS;
