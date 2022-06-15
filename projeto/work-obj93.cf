@@ -1,0 +1,7 @@
+v 4
+file . "contador.vhd" "511d870ae23b7aef862950ada1b4e7534dd13395" "20220614233133.455":
+  entity contador at 1( 0) + 0 on 19;
+  architecture contador_arch of contador at 14( 268) + 0 on 20;
+file . "flipflop.vhd" "a90970f31107e8488f522c5c13e7e89b09d00ae1" "20220614221415.464":
+  entity flipflop at 1( 0) + 0 on 17;
+  architecture flipflop_arch of flipflop at 12( 189) + 0 on 18;
