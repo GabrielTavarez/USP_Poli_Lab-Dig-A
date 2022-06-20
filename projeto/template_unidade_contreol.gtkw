@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.111 (w)1999-2020 BSI
+[*] Sat Jun 18 18:34:45 2022
+[*]
+[dumpfile] "C:\Users\gabri\OneDrive\Documents\USP_Poli_Lab-Dig-A\projeto\simul.vcd"
+[dumpfile_mtime] "Sat Jun 18 18:33:59 2022"
+[dumpfile_size] 5142
+[savefile] "C:\Users\gabri\OneDrive\Documents\USP_Poli_Lab-Dig-A\projeto\template_unidade_contreol.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-26.417685 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 280
+[signals_width] 130
+[sst_expanded] 1
+[sst_vpaned_height] 143
+@28
+tb_unidade_de_controle.clock_in
+tb_unidade_de_controle.inicia_b_s
+tb_unidade_de_controle.para_b_s
+tb_unidade_de_controle.reset_b_s
+tb_unidade_de_controle.ativado_s
+@29
+tb_unidade_de_controle.reset_s
+[pattern_trace] 1
+[pattern_trace] 0

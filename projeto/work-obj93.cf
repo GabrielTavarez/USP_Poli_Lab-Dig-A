@@ -1,7 +1,31 @@
 v 4
-file . "contador.vhd" "511d870ae23b7aef862950ada1b4e7534dd13395" "20220614233133.455":
-  entity contador at 1( 0) + 0 on 19;
-  architecture contador_arch of contador at 14( 268) + 0 on 20;
-file . "flipflop.vhd" "a90970f31107e8488f522c5c13e7e89b09d00ae1" "20220614221415.464":
-  entity flipflop at 1( 0) + 0 on 17;
-  architecture flipflop_arch of flipflop at 12( 189) + 0 on 18;
+file . "tb_cronometro.vhd" "9fa96666e52a4b20c13e68901727e9714b409bbb" "20220618213314.414":
+  entity tb_cronometro at 1( 0) + 0 on 171;
+  architecture tb_cronometro_arch of tb_cronometro at 9( 171) + 0 on 172;
+file . "cronometro.vhd" "b56b16725549cf711d72258bd187676fb3249af5" "20220618210545.368":
+  entity cronometro at 1( 0) + 0 on 163;
+  architecture cronometro_arch of cronometro at 19( 545) + 0 on 164;
+file . "unidade_de_controle.vhd" "caa0f6da9ef4463beb960b2f9ed6221fb3378e27" "20220618212528.811":
+  entity unidade_de_controle at 2( 24) + 0 on 167;
+  architecture arch of unidade_de_controle at 15( 300) + 0 on 168;
+file . "tb_fluxo_de_dados.vhd" "3d37ccbea8867a9941ab5307cee0a26e56f89218" "20220618205409.263":
+  entity tb_fluxo_de_dados at 1( 0) + 0 on 159;
+  architecture tb_fluxo_de_dados_arch of tb_fluxo_de_dados at 10( 181) + 0 on 160;
+file . "fluxo_de_dados.vhd" "933e91626256b5f2b3d0e259ba50d9f7b98915d7" "20220618205351.190":
+  entity fluxo_de_dados at 1( 0) + 0 on 157;
+  architecture fluxo_de_dados_arch of fluxo_de_dados at 28( 861) + 0 on 158;
+file . "tb_contador.vhd" "b457cf1450409b71966e1c9cece8b523c57dcc9f" "20220615191457.658":
+  entity tb_contador at 1( 0) + 0 on 87;
+  architecture tb_contador_arch of tb_contador at 9( 167) + 0 on 88;
+file . "flipflop.vhd" "34e24bfb49ae56834ae7c756e1fe8ba3431b3abe" "20220615190159.569":
+  entity flipflop at 1( 0) + 0 on 73;
+  architecture flipflop_arch of flipflop at 14( 251) + 0 on 74;
+file . "contador.vhd" "6bb4dcb8332bc685a22f98b6c5d636de3d6a68cc" "20220615191447.400":
+  entity contador at 1( 0) + 0 on 85;
+  architecture contador_arch of contador at 17( 321) + 0 on 86;
+file . "tb_unidade_de_controle.vhd" "04548bd9391a1a8a0d9864271b60c4e0d38f850d" "20220618224035.589":
+  entity tb_unidade_de_controle at 1( 0) + 0 on 173;
+  architecture tb_unidade_de_controle_arch of tb_unidade_de_controle at 9( 189) + 0 on 174;
+file . "codificador_hexadecimal.vhd" "e24e318ac82a8028b249a2fedc21786d633756dd" "20220618200209.749":
+  entity codificador_hexadecimal at 1( 0) + 0 on 139;
+  architecture codificador_hexadecimal_arch of codificador_hexadecimal at 12( 272) + 0 on 140;

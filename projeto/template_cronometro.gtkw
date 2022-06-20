@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.111 (w)1999-2020 BSI
+[*] Sat Jun 18 21:34:57 2022
+[*]
+[dumpfile] "C:\Users\gabri\OneDrive\Documents\USP_Poli_Lab-Dig-A\projeto\simul.vcd"
+[dumpfile_mtime] "Sat Jun 18 21:33:16 2022"
+[dumpfile_size] 1978032
+[savefile] "C:\Users\gabri\OneDrive\Documents\USP_Poli_Lab-Dig-A\projeto\template_cronometro.gtkw"
+[timestart] 0
+[size] 1920 983
+[pos] -59 -56
+*-37.910030 535000000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_cronometro.
+[sst_width] 280
+[signals_width] 130
+[sst_expanded] 1
+[sst_vpaned_height] 276
+@28
+tb_cronometro.clock_in
+tb_cronometro.inicia_b_s
+tb_cronometro.para_b_s
+tb_cronometro.reset_b_s
+@22
+tb_cronometro.dut.q0_s[3:0]
+tb_cronometro.dut.q1_s[3:0]
+tb_cronometro.dut.q2_s[3:0]
+tb_cronometro.dut.q3_s[3:0]
+tb_cronometro.dut.q4_s[3:0]
+tb_cronometro.dut.q5_s[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
