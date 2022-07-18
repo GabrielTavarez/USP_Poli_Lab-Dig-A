@@ -1,0 +1,8 @@
+
+State Machine - |unidade_de_controle|CurrentState
+Name CurrentState.para_state CurrentState.grava_state CurrentState.prog_state CurrentState.oper_state CurrentState.clear_state 
+CurrentState.clear_state 0 0 0 0 0 
+CurrentState.oper_state 0 0 0 1 1 
+CurrentState.prog_state 0 0 1 0 1 
+CurrentState.grava_state 0 1 0 0 1 
+CurrentState.para_state 1 0 0 0 1 

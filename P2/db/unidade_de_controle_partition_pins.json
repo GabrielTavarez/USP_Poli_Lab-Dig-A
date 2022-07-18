@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "grava",
+					"strict" : false
+				},
+				{
+					"name" : "conta",
+					"strict" : false
+				},
+				{
+					"name" : "zera",
+					"strict" : false
+				},
+				{
+					"name" : "grava_b",
+					"strict" : false
+				},
+				{
+					"name" : "programa_s",
+					"strict" : false
+				},
+				{
+					"name" : "clear_b",
+					"strict" : false
+				},
+				{
+					"name" : "inibe_b",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
